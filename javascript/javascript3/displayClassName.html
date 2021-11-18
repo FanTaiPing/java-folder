@@ -1,0 +1,40 @@
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="css/shoppingClassName.css">
+</head>
+
+<body>
+    <section id="shopping">
+        <div id="cart" onmouseover="over()" onmouseout="out()">我的购物车<span>1</span></div>
+        <div id="cartList">
+            <h2>最新加入的商品</h2>
+            <ul>
+                <li><img src="image/makeup.jpg "></li>
+                <li>倩碧经典三部曲套装（液体皂200ml+明肌2号水200ml+润肤乳125ml）</li>
+                <li>¥558.00×1<br/>删除</li>
+            </ul>
+            <div class="footer ">共1件商品<span>共计¥558.00</span> <span>去购物车</span></div>
+        </div>
+    </section>
+    <script>
+    </script>
+</body>
+<script>
+    var cart = document.getElementById("cart");
+    var cart = document.getElementById("cartList");
+    //鼠标移入
+    function over() {
+        cart.className = "cartOver";
+        cartList.className = "cartListOver";
+    }
+    //鼠标移出
+    function out() {
+        cart.className = "cartOut";
+        cartList.className = "cartListOut";
+    }
+</script>
+
+</html>

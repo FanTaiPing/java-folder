@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>原型链</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function Humans() {
+        this.foot = 2;
+    }
+    Humans.prototype.getFoot = function() {
+        return this.foot;
+    }
+
+    function Man() {
+        this.head = 1;
+    }
+    //继承了Humans
+    Man.prototype = new Humans();
+    Man.prototype.getHead = function() {
+        return this.head;
+    }
+    var manOne = new Man();
+    alert(manOne.getFoot());
+    alert(manOne instanceof Object);
+    alert(manOne instanceof Humans);
+    alert(manOne instanceof Man);
+</script>
+
+</html>

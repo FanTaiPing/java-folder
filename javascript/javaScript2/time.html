@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>获得当前系统时间</title>
+</head>
+
+
+<body>
+    <div id="myclock">
+
+    </div>
+</body>
+<!-- 内部js -->
+<script>
+    function disptime() {
+        // 创建日期时间对象 hh:时  mm:分  ss:秒
+        var today = new Date();
+        var hh = today.getHours();
+        var mm = today.getMinutes();
+        var ss = today.getSeconds();
+
+        document.getElementById("myclock").innerText = "现在时间是：" + hh + ":" + mm + ":" + ss
+    }
+    setInterval("disptime()", 1000);
+</script>
+
+</html>

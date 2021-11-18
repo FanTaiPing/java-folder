@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>完善当当购物车页面</title>
+    <link type="text/css" rel="stylesheet" href="css/cartStyle1.css" />
+</head>
+
+
+<body>
+
+    <div class="content">
+        <div class="logo">
+            <img src="image/dd_logo1.jpg"><span>关闭</span>
+        </div>
+        <div class="cartList">
+            <ul>
+                <li>¥<input type="text" name="price" value="21.90"></li>
+
+                <li>
+                    <!-- 方法一 -->
+                    <!-- <input type="button" name="minus" value="-" onclick="minus_s()"> -->
+                    <!-- 方法二 -->
+                    <input type="button" name="minus" value="-" onclick="subtraction(0)">
+                    <input type="text" name="amount" value="1" onblur="update(0)">
+                    <!-- 方法一 -->
+                    <!-- <input type="button" name="plus" value="+" onclick="plus_s()"> -->
+                    <!-- 方法二 -->
+                    <input type="button" name="plus" value="+" onclick="addition(0)">
+
+                </li>
+                <li id="price0">¥21.90</li>
+                <li>
+                    <p>移入收藏</p>
+                    <p>删除</p>
+                </li>
+            </ul>
+            <ul>
+                <li>¥<input type="text" name="price" value="24.00"></li>
+
+                <li>
+                    <!-- 方法一 -->
+                    <!-- <input type="button" name="minus" value="-" onclick="minus_ss()"> -->
+                    <!-- 方法二 -->
+                    <input type="button" name="minus" value="-" onclick="subtraction(1)">
+                    <input type="text" name="amount" value="1" onblur="update(1)">
+                    <!-- 方法一 -->
+                    <!-- <input type="button" name="plus" value="+" onclick="plus_ss()"> -->
+                    <!-- 方法二 -->
+                    <input type="button" name="plus" value="+" onclick="addition(1)">
+                </li>
+                <li id="price1">¥24.00</li>
+                <li>
+                    <p>移入收藏</p>
+                    <p>删除</p>
+                </li>
+            </ul>
+            <ol>
+                <li id="totalPrice">&nbsp;</li>
+                <!-- 方法一 -->
+                <!-- <li onclick="totalPrice()"><span>结 算</span></li> -->
+                <!-- 方法二 -->
+                <li onclick="count()"><span>结 算</span></li>
+            </ol>
+        </div>
+
+
+
+
+    </div>
+</body>
+<script src="JS/shopping1.js"></script>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮切换颜色</title>
+</head>
+<!-- 内部css -->
+<style>
+    #container {
+        width: 500px;
+        margin: 50px auto;
+    }
+</style>
+<!-- 外部js -->
+<script src="JS/color.js"></script>
+
+<body>
+    <div id="container">
+        <form action="#">
+            <p>本次选择的颜色是：<span id="color"></span></p>
+            <input type="button" onclick="changeColor()" value="选择颜色">
+        </form>
+    </div>
+</body>
+
+</html>

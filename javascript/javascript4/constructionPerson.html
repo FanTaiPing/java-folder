@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>创建person对象并画原型图</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function Person(nation, skinColor) {
+        this.nation = nation;
+        this.skinColor = skinColor;
+        // this.showInfo = function() {
+        //     document.writeln(`民族：${this.nation}<br>肤色：${this.skinColor}`);
+        // }
+    }
+    Person.prototype.getNation = function() {
+        return this.nation;
+    }
+    Person.prototype.getSkinColor = function() {
+        return this.skinColor;
+    }
+
+    function Woman(sex) {
+        Person.call(this, "汉族", "黄色"); //继承了Person,同时还传递了参数
+        this.sex = sex;
+    }
+    Woman.prototype = new Person();
+    Woman.prototype.getSex = function() {
+        return this.sex;
+    }
+    var woman1 = new Woman("女");
+    document.writeln(`民族：${woman1.getNation()}<br>肤色：${woman1.getSkinColor()}<br>性别：${woman1.getSex()}`);
+</script>
+
+</html>

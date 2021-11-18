@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>使用document对象操作页面</title>
+    <style type="text/css">
+        body,
+        input,
+        div,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-size: 14px;
+            font-family: "微软雅黑";
+            line-height: 25px;
+        }
+        
+        .content {
+            width: 550px;
+            margin: 0 auto;
+        }
+        
+        .content img {
+            float: left;
+            width: 150px;
+        }
+        
+        .r {
+            float: left;
+            width: 400px;
+        }
+        
+        input[name="changeBook"] {
+            width: 100px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            font-size: 14px;
+            font-family: "微软雅黑";
+            margin: 10px 0 10px 0;
+        }
+        
+        input[name="season"] {
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <img src="image/book.jpg" alt="岛上书店" />
+        <div class="r">
+            <div id="book">书名：岛上书店</div>
+            <input name="changeBook" value="换换名称" type="button" onclick="alterBook();" /><br> 四季名称：
+            <input name="season" type="text" value="春" />
+            <input name="season" type="text" value="夏" />
+            <input name="season" type="text" value="秋" />
+            <input name="season" type="text" value="冬" /><br><br>
+            <input name="b2" type="button" value="input内容" onclick="all_input()" />
+            <input name="b3" type="button" value="四季名称" onclick="s_input()" />
+            <input name="b4" type="button" value="清空页面内容" onclick="clearAll()" />
+            <p id="replace"></p>
+        </div>
+    </div>
+    <script type="text/javascript" src="JS/book.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>prototyope原型对象</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function Flower() {
+
+    }
+    //每个函数都有一个prototype(原型对象)
+    Flower.prototype.name = "葫芦娃";
+    Flower.prototype.uses = "打妖怪";
+    Flower.showName = function() {
+        alert(this.prototype.name);
+    }
+    Flower.showUses = function() {
+        alert("uses属性值是：" + this.uses);
+    }
+    Flower.showName();
+
+    // 原型对象其实是一个指针，只想Flower的构造函数
+    var flowerOne = new Flower();
+    var flowertwo = new Flower();
+    flowerOne.uses = "榨油";
+    // 不同的对象（第一个输出榨油，第二个输出打妖怪）
+    alert(flowerOne.uses);
+    alert(flowertwo.uses);
+    // 调用原型设置的uses属性
+    Flower.prototype.showUses();
+</script>
+
+</html>

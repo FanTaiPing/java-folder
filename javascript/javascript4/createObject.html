@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>创建对象两种方式</title>
+</head>
+
+<body>
+
+</body>
+<!-- <script>
+    //第一种同伙Object来申明并赋值
+    var flower = new Object();
+    //属性
+    flower.name = "长春花";
+    flower.uses = "观赏或用药等";
+    //函数（方法）匿名函数<function后没有函数名>（）=>箭头函数
+    flower.showName = function() {
+        alert(this.name);
+    }
+    flower.showName();
+</script> -->
+
+<script>
+    //第二种使用字面量方式直接创建对象并赋值
+    var flower = {
+        name: "长春花",
+        uses: "观赏或要用",
+        showName: function() {
+            alert(this.name);
+        }
+    }
+    flower.showName();
+</script>
+
+</html>

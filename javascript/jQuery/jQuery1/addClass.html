@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加类样式</title>
+</head>
+<Style>
+    .current {
+        background-color: aqua;
+        color: #fff;
+    }
+</Style>
+
+<body>
+    <h6 id="current">jQuery简介</h6>
+    <h6>jQuery语法</h6>
+    <h6>jQuery选择器</h6>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // $("#current").addClass(function() {
+        //     var cur = $("#current");
+        //     cur.css("color", "#fff");
+        //     cur.css("background-color", "aqua");
+        // });
+
+        $("#current").addClass("current");
+    })
+</script>
+
+</html>

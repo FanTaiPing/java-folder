@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>全网热播视频</title>
+    <link rel="stylesheet" href="css/play.css">
+</head>
+
+<body>
+    <section id="play">
+        <h1>全网热播视频</h1>
+        <ul>
+            <li><img src="images/flv01.jpg">
+                <p>昊花梦</p><span>1</span></li>
+            <li><img src="images/flv02.jpg">
+                <p>好先生</p><span>2</span></li>
+            <li>
+                <ol>
+                    <li><span>3</span>三八线
+                        <p>加入看单</p>
+                    </li>
+                    <li><span>4</span>吉详天宝
+                        <p>加入看单</p>
+                    </li>
+                    <li><span>5</span>亲爱的翻译官
+                        <p>加入看单</p>
+                    </li>
+                    <li><span>6</span>仙剑云之凡
+                        <p>加入看单</p>
+                    </li>
+                    <li><span>7</span>权力的游戏第五季
+                        <p>加入看单</p>
+                    </li>
+                    <li><span>8</span>琅琊榜
+                        <p>加入看单</p>
+                    </li>
+                    <li><span>9</span>那年青春我们正好
+                        <p>加入看单</p>
+                    </li>
+                    <li><span>10</span>乡村受情8（上）
+                        <p>加入看单</p>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </section>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        //设置图片与右侧内容间距
+        $("#play>ul>li:not(li:eq(2))").css("margin-right", "10px");
+
+        //使用last设置右侧列表背景颜色
+        $("#play>ul>li:last>ol").css("background-color", "#f0f0f0");
+
+        //设置前三个视频名称前的数字背景颜色 
+        //设置第1.2个
+        $("#play>ul>li:not(li:eq(2))>span").css("background-color", '#f0a30f');
+        //设置第3个
+        $("#play>ul>li:nth-of-type(3)>ol>li:first>span").css("background-color", "#f0a30f");
+
+        //设置3后面的数字的背景颜色
+        $("#play>ul>li:nth-of-type(3)>ol>li>span").css("background-color", '#f0a30f');
+
+        //设置3、5、6、7后的箭头向上，4、8、9、10的箭头向下
+        //设置3后的箭头向上
+        $("#play>ul>li:nth-of-type(3)>ol>li:eq(0)").css({
+            "background": "url(images/orange.jpg) 195px -1px no-repeat",
+        });
+        //设置4后的向下箭头
+        $("#play>ul>li:nth-of-type(3)>ol>li:eq(1)").css({
+            "background": "url(images/green.jpg) 195px -1px no-repeat",
+        });
+        //设置5、6、7后的向上箭头
+        $("#play>ul>li:nth-of-type(3)>ol>li:gt(1)").css({
+            "background": "url(images/orange.jpg) 195px -1px no-repeat",
+        });
+        //设置8、9、10后的向上箭头
+        $("#play>ul>li:nth-of-type(3)>ol>li:gt(4):lt(4)").css({
+            "background": "url(images/green.jpg) 195px -1px no-repeat",
+        });
+
+        //鼠标经过右侧列表是显示隐藏的p：“加入清单”，鼠标离开时隐藏
+        $("#play>ul>li:nth-of-type(3)>ol>li").mouseover(function() {
+            $(this).find("p").show();
+        })
+        $("#play>ul>li:nth-of-type(3)>ol>li").mouseout(function() {
+            $(this).find("p").hide();
+        })
+    })
+</script>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>使用构造函数创建对象</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function Flower(name, uses) {
+        this.name = name;
+        this.uses = uses;
+        this.showName = function() {
+            alert(this.name);
+            document.writeln(this.uses);
+        }
+    }
+    var flower = new Flower("葫芦娃", "打妖怪");
+    flower.showName();
+
+    var flowerTwo = new Flower("油菜花", "榨油");
+    flowerTwo.showName();
+
+    // constructor属性指向Flower
+    alert(flower.constructor == Flower);
+    alert(flowerTwo.constructor == Flower);
+
+    // instanceof操作符检测对象类型
+    alert(flower instanceof Object);
+    alert(flowerTwo instanceof Flower);
+</script>
+
+</html>

@@ -1,0 +1,49 @@
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="css/shopping.css">
+</head>
+
+<body>
+    <section id="shopping">
+        <div onmouseout="out()" style="width: 300px;height: 200px;">
+            <div id="cart" onmouseover="over()">我的购物车<span>1</span></div>
+            <div id="cartList">
+                <h2>最新加入的商品</h2>
+                <ul>
+                    <li><img src="image/makeup.jpg"></li>
+                    <li>倩碧经典三部曲套装（液体皂200ml+明肌2号水200ml+润肤乳125ml）</li>
+                    <li>¥558.00×1<br/>删除</li>
+                </ul>
+                <div class="footer">共1件商品<span>共计¥558.00</span> <span>去购物车</span></div>
+            </div>
+        </div>
+    </section>
+    <script>
+    </script>
+</body>
+<script>
+    var cart = document.getElementById("cart");
+    var cart = document.getElementById("cartList");
+    //鼠标移入
+    function over() {
+        cart.style.background = "#ffffff";
+        cart.style.zIndex = "1";
+        cart.style.borderBottom = "none";
+
+        cartList.style.display = "block";
+        cartList.style.position = "relative";
+        cartList.style.top = "-1px";
+
+    }
+    //鼠标移出
+    function out() {
+        document.getElementById("cart").style.backgroundColor = "#f9f9f9";
+        document.getElementById("cart").style.borderBottom = "solid 1px #dcdcdc";
+        document.getElementById("cartList").style.display = "none";
+    }
+</script>
+
+</html>

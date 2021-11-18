@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>带关闭按钮的滚动广告</title>
+    <style type="text/css">
+        #main {
+            text-align: center;
+        }
+        
+        #float {
+            position: absolute;
+            left: 30px;
+            top: 60px;
+            z-index: 1;
+        }
+        
+        #close {
+            position: absolute;
+            top: 60px;
+            left: 134px;
+            z-index: 2;
+            cursor: hand;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="close" onClick="adv_close()"><img src="image/close.jpg"></div>
+    <div id="float"><img src="image/advpic.jpg"></div>
+    <div id="main"><img src="image/contentpic.jpg"></div>
+
+    <script src="js/adverClose.js"></script>
+</body>
+
+</html>
