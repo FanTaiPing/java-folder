@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin-top: 100px;
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.container>img {
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.container>img:nth-of-type(1) {
+    right: 800px;
+    top: 80px;
+    /* 逆时针旋转15度 */
+    transform: rotate(-70deg);
+}
+
+.container>img:nth-of-type(2) {
+    right: 700px;
+    top: 160px;
+    /* 逆时针旋转15度 */
+    transform: rotate(-50deg);
+}
+
+.container>img:nth-of-type(3) {
+    right: 600px;
+    top: 240px;
+    /* 逆时针旋转15度 */
+    transform: rotate(-25deg);
+}
+
+.container>img:nth-of-type(4) {
+    right: 500px;
+    top: 320px;
+    /* 逆时针旋转15度 */
+    transform: rotate(-15deg);
+}
+
+.container>img:nth-of-type(5) {
+    right: 400px;
+    top: 400px;
+    /* 逆时针旋转15度 */
+    transform: rotate(-90deg);
+}
+
+.container>img:nth-of-type(6) {
+    right: 300px;
+    top: 320px;
+    /* 逆时针旋转15度 */
+    transform: rotate(15deg);
+}
+
+.container>img:nth-of-type(7) {
+    right: 200px;
+    top: 240px;
+    /* 逆时针旋转15度 */
+    transform: rotate(25deg);
+}
+
+.container>img:nth-of-type(8) {
+    right: 100px;
+    top: 160px;
+    /* 逆时针旋转15度 */
+    transform: rotate(50deg);
+}
+
+.container>img:nth-of-type(9) {
+    right: 0px;
+    top: 80px;
+    /* 逆时针旋转15度 */
+    transform: rotate(60deg);
+}
+
+.container>img:nth-of-type(10) {
+    right: -100px;
+    top: 0px;
+    /* 逆时针旋转15度 */
+    transform: rotate(70deg);
+}
+
+.container>img:hover {
+    z-index: 1;
+    transform: rotate(0deg) scale(1.5);
+    box-shadow: 5px 5px 5px rgb(211, 204, 204);
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}

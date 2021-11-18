@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 990px;
+    margin: auto;
+}
+
+.banner {
+    height: 60px;
+    vertical-align: middle;
+}
+
+.img {
+    float: left;
+}
+
+.login {
+    padding-left: 180px;
+    padding-top: 20px;
+    font-weight: 700;
+    color: rgb(177, 169, 169);
+}
+
+section {
+    width: 990px;
+    height: 475px;
+}
+
+.bannerimg {
+    position: relative;
+    display: inline-block;
+}
+
+.loginForm {
+    position: absolute;
+    top: 25px;
+    left: 600px;
+    display: inline-block;
+    width: 320px;
+    background: white;
+}
+
+.loginForm>h2 {
+    display: inline-block;
+    padding-left: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgb(179, 171, 171)
+}
+
+.register {
+    float: right;
+    padding-right: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+}
+
+.register>img {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+}
+
+.user {
+    border: 1px solid rgb(153, 147, 147);
+    width: 280px;
+    height: 32px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.user>img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.user>input {
+    height: 32px;
+    width: 245px;
+    border: none;
+    color: rgb(156, 148, 148);
+}
+
+.pws {
+    margin-top: 15px;
+    margin-left: 15px;
+    border: 1px solid rgb(153, 147, 147);
+    width: 280px;
+    height: 32px;
+}
+
+.pws>img {
+    width: 30px;
+    height: 31px;
+    vertical-align: middle;
+}
+
+.pws>input {
+    height: 32px;
+    width: 245px;
+    border: none;
+    color: rgb(156, 148, 148);
+}
+
+.checkbox {
+    color: rgb(156, 148, 148);
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.checkbox>a {
+    float: right;
+    padding-right: 14px;
+    font-size: 10px;
+    color: rgb(156, 148, 148);
+    line-height: 20px;
+}
+
+.bottonLogin {
+    padding-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.bottonLogin>input {
+    width: 282px;
+    height: 25px;
+    background: red;
+    border: none;
+    color: white;
+}
+
+footer>ul {
+    margin-top: 15px;
+    color: rgb(187, 175, 175);
+}
+
+footer>ul>li {
+    float: left;
+    margin-right: 10px;
+}
+
+footer>ul>li>a {
+    color: rgb(124, 117, 117);
+    font-size: 14px;
+}
+
+footer>ul>li>a:hover {
+    color: red;
+}
+
+footer {
+    width: 990px;
+    text-align: center;
+}
+
+footer>p {
+    display: inline-block;
+    margin-top: 20px;
+    color: rgb(124, 117, 117);
+    font-size: 14px;
+}

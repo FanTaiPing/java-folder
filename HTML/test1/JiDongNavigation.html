@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>京东导航栏</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .container {
+        float: none;
+        margin: 20px auto 0 auto;
+        width: 850px;
+        height: 35px;
+        border-bottom: 2px solid rgb(231, 228, 228);
+    }
+    
+    .list ul {
+        margin-left: 20px;
+    }
+    
+    .list>ul>li {
+        float: left;
+        margin-right: 25px;
+    }
+    
+    .list>ul>li>a {
+        line-height: 30px;
+        font-weight: 700;
+        color: black;
+    }
+    
+    .list>ul>li>a:hover {
+        color: red;
+    }
+    
+    .list>ul>li:nth-of-type(1)>a {
+        color: red;
+    }
+    
+    .list>ul>li:nth-of-type(2)>a {
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="list">
+            <ul>
+                <li><a href="#">秒杀</a></li>
+                <li><a href="#">优惠券</a></li>
+                <li><a href="#">PLUS会员</a></li>
+                <li><a href="#">品牌闪购</a></li>
+                <li><a href="#">拍卖</a></li>
+                <li><a href="#">京东家电</a></li>
+                <li><a href="#">京东超市</a></li>
+                <li><a href="#">京东生鲜</a></li>
+                <li><a href="#">京东国际</a></li>
+                <li><a href="#">京东云</a></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+body {
+    background: #d5d5d5;
+    width: 500px;
+}
+
+* {
+    text-decoration: none;
+}
+
+
+/* 清除内外边距 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* h2大标题样式 */
+
+.type>h2 {
+    background: black;
+    line-height: 40px;
+    color: white;
+    text-indent: 0.7em;
+}
+
+.list {
+    background: #ffffff;
+    width: 300px;
+}
+
+.list>dl>dt {
+    font-size: 20px;
+    font-family: '楷体';
+    padding-left: 30px;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dlNine:last-of-type {
+    border: none;
+}
+
+
+/*     
+a {
+    color: #b6b9b9;
+} */
+
+
+/* 护肤商品分类标题样式 */
+
+.dlOne {
+    background: url(../image/icon_01.gif) 2px 5px no-repeat;
+    border-bottom: 2px dashed #b6b9b9;
+}
+
+.dlTow {
+    background: url(../image/icon_02.gif) 2px 6px no-repeat;
+    border-bottom: 2px dashed #b6b9b9;
+}
+
+.dlThree {
+    background: url(../image/icon_03.gif) 2px 7px no-repeat;
+    border-bottom: 2px dashed #b6b9b9;
+}
+
+.dlFour {
+    background: url(../image/icon_04.gif) 2px 5px no-repeat;
+    border-bottom: 2px dashed #b6b9b9;
+}
+
+.dlFive {
+    background: url(../image/icon_05.gif) 2px 3px no-repeat;
+    border-bottom: 2px dashed #b6b9b9;
+}
+
+.dlSix {
+    background: url(../image/icon_06.gif) 2px 3px no-repeat;
+    border-bottom: 2px dashed #b6b9b9;
+}
+
+.dlSeven {
+    background: url(../image/icon_07.gif) 2px 3px no-repeat;
+    border-bottom: 2px dashed #b6b9b9;
+}
+
+.dlEight {
+    background: url(../image/icon_08.gif) 2px 5px no-repeat;
+    border-bottom: 2px dashed #b6b9b9;
+}
+
+.dlNine {
+    background: url(../image/icon_09.gif) 2px 3px no-repeat;
+    border-bottom: 2px dashed #b6b9b9;
+}
+
+dl>dd:last-of-type {
+    margin-bottom: 5px;
+}
+
+.list>dl>dd {
+    margin-left: 40px;
+}
+
+.list>dl>dd>a {
+    color: grey;
+}
+
+.list>dl>dd>a:hover {
+    color: red;
+}

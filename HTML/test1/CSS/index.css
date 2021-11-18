@@ -1,0 +1,46 @@
+.rootImage {
+    width: 35px;
+    height: 35px;
+}
+
+.left_list {
+    height: 1500px;
+    padding: 0;
+    margin: 0;
+}
+
+.head {
+    height: auto;
+}
+
+.head>p {
+    font-size: 50px;
+    background: -webkit-linear-gradient(90deg, #ACB6E5, #86FDE8);
+}
+
+.user {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.search_input {
+    width: 150px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.accordion-body:hover {
+    background-color: gainsboro;
+}
+
+.btn-info-select {
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+}

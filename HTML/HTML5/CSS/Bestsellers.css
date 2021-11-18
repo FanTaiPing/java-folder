@@ -1,0 +1,37 @@
+* {
+    text-decoration: none;
+}
+
+.zong {
+    width: 300px;
+    background: linear-gradient(to bottom, #F9FBCB, #F8F8F3);
+}
+
+.title {
+    width: 300px;
+    background: #518700 url(../image/bang.gif) 100px 3px no-repeat;
+    font-size: 16px;
+    color: white;
+    text-indent: 1em;
+    line-height: 30px;
+}
+
+img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a {
+    color: #1a66b3;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.img {
+    margin-left: 35px;
+}

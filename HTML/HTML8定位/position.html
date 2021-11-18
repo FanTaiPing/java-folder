@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>position定位</title>
+</head>
+<style>
+    .container {
+        width: 500px;
+        margin: 30px auto;
+        border: 1px solid black;
+    }
+    
+    .container>div {
+        border: 1px dashed black;
+        margin: 15px;
+    }
+    
+    .container>div:nth-of-type(1) {
+        background: yellow;
+        position: relative;
+        top: -20px;
+        left: -20px;
+    }
+    
+    .container>div:nth-of-type(2) {
+        background: pink;
+        position: absolute;
+        left: 20px;
+        top: -20px;
+        float: right;
+    }
+    
+    .container>div:nth-of-type(3) {
+        background: red;
+        /* position: relative;
+        right: 20px;
+        bottom: 30px; */
+    }
+</style>
+
+<body>
+
+</body>
+<div class="container">
+    <div>第一个盒子</div>
+    <div>第二个盒子</div>
+    <div>第三个盒子</div>
+</div>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>轮播按钮设置</title>
+</head>
+<style>
+    * {
+        list-style: none;
+    }
+    
+    .container {
+        width: 440px;
+        margin: 30px auto;
+    }
+    
+    .carouselImg {
+        position: relative;
+    }
+    
+    .num {
+        position: absolute;
+        top: 84px;
+        left: 206px;
+    }
+    
+    .carouselImg>ul>li {
+        float: left;
+        text-align: center;
+        width: 25px;
+        height: 25px;
+        background: white;
+        border: 1px solid rgb(155, 150, 150);
+        border-radius: 5px;
+        margin-right: 10px;
+        line-height: 30px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <!-- 轮播图按钮 -->
+        <section>
+            <div class="carouselImg">
+                <img src="image/adver-01.jpg" alt="" />
+                <ul class="num">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

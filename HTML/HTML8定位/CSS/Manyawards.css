@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    width: 1012px;
+    margin: auto;
+}
+
+.sidebar-left {
+    position: absolute;
+    top: 200px;
+    left: -250px;
+}
+
+.sidebar-right1 {
+    position: absolute;
+    top: 200px;
+    right: -160px;
+}
+
+.sidebar-right2 {
+    position: fixed;
+    top: 430px;
+    margin-left: 1100px;
+}
+
+.sidebar-right3 {
+    position: fixed;
+    top: 650px;
+    margin-left: 1140px;
+}

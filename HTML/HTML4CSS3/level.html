@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>层次标签</title>
+</head>
+<!-- 内部样式 -->
+<style>
+    /* 子选择器 */
+    /* body里面的所有下一级p标签 */
+    body>p {
+        background-color: red;
+        color: pink;
+    }
+
+    /* 后代选择器 */
+    li p {
+        background: pink;
+    }
+
+    /* 相邻兄弟选择器 （同级），只会从上往下匹配 */
+    .active+p {
+        background: green;
+    }
+
+    /* 通用选择器  类选择器.active与它同级匹配的所有p标签 顺序匹配 */
+    .active~p {
+        background: yellow;
+    }
+
+</style>
+
+<body>
+    <p class="active">p1</p>
+    <p >p2</p>
+    <p>p3</p>
+    <ul>
+        <li>
+            <p>p4</p>
+        </li>
+        <li>
+            <p>p5</p>
+        </li>
+        <li>
+            <p>p6</p>
+        </li>
+    </ul>
+</body>
+
+</html>

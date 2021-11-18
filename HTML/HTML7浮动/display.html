@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>display属性使用</title>
+</head>
+<style>
+    .container>div {
+        border: 1px solid red;
+        text-align: center;
+    }
+    
+    .one {
+        /* margin: auto; */
+        width: 200px;
+        height: 200px;
+        display: inline;
+    }
+    
+    .tow {
+        /* margin: auto; */
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+    }
+    
+    .spanOne {
+        display: block;
+        /* 隐藏之后不会保留位置 */
+        display: none;
+        /* 隐藏之后会保留位置 */
+        visibility: hidden;
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .spanTow {
+        display: block;
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="one">div1</div>
+        <div class="tow">div2</div>
+        <span class="spanOne">span1</span>
+        <span class="spanTow">span2</span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 310px;
+    border: 1px solid rgb(194, 193, 193);
+    box-sizing: border-box;
+    margin: 30px;
+}
+
+.title {
+    width: 310px;
+    background: linear-gradient(to bottom, #cdcdff, #f9f9ff);
+    border-bottom: 2px dashed rgb(160, 157, 157);
+}
+
+.title>h2 {
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 26px;
+    color: grey;
+}
+
+.list>ul>li>a {
+    color: grey;
+    font-size: 16px;
+    line-height: 60px;
+}
+
+.list>ul>li>a>span {
+    font-weight: 700;
+}
+
+.list {
+    line-height: 26px;
+    margin: 0 26px;
+}
+
+.list ul li a:hover {
+    color: darkred;
+}

@@ -1,0 +1,13 @@
+h1 {
+color:aqua;
+font-size: 30px;
+}
+h2{
+    color: black;
+}
+/* 标签选择器，所有p标签 */
+p {
+    color: green;
+    font-size: 14px;
+    line-height: 100px;
+}

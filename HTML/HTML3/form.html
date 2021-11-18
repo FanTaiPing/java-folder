@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>表单元素</title>
+</head>
+
+<body>
+    <!-- 表单 -->
+    <form method="POST" action="#">
+        <!-- 标记标签 -->
+        <label for="username">姓名：</label>
+        <!-- 文本框 -->
+        <input id="username" type="text" value="用户名" />
+        <br>
+        <label for="pwd">密码：</label>
+        <!-- 密码框 -->
+        <input type="password" id="pwd" />
+        <br>
+        <label for="sex">性别：</label>
+        <!-- 单选按钮 -->
+        <input type="radio" name="sex" checked id="sex" />男
+        <input type="radio" name="sex" />女
+        <br>
+        <label for="hobby">爱好：</label>
+        <!-- 复选框 -->
+        <input type="checkbox" name="hobby" id="hobby" checked />听音乐
+        <input type="checkbox" name="hobby" />旅游
+        <input type="checkbox" name="hobby" />玩游戏
+        <br>
+        <!-- 下拉列表 -->
+        <label for="month">月份：</label>
+        <select name="" id="month">
+            <option value="" selected>一月</option>
+            <option value="">二月</option>
+            <option value="">三月</option>
+        </select>
+        <br>
+        <!-- 按钮 -->
+        <input type="submit" value="提交按钮" />
+        <input type="reset" value="重置按钮" />
+        <input type="button" value="普通按钮" />
+        <button type="submit">提交</button>
+        <button type="reset">重置</button>
+        <br>
+        <!-- 图片按钮 -->
+        <input type="image" src="image/bg2.jpeg" height="150px" width="200px">
+        <br>
+        <label for="profile">个人简介：</label>
+        <!-- 多行文本域 -->
+        <textarea name="" id="" cols="30" rows="10">对风华高科了解福利计划空间来衡量</textarea>
+        <br>
+        <!-- 文件域 -->
+        <label for="upload">上传头像：</label>
+        <input type="file" name="upload" />
+        <br>
+        <!-- 邮箱 \h5新添加的元素-->
+        <label for="qqEmail">邮箱：</label>
+        <input type="email" id="qqEmail" />
+        <br>
+        <!-- 网址 -->
+        <label for="userUrl">网址：</label>
+        <input type="url" id="userUrl" />
+        <br>
+        <!-- 数字 -->
+        <label for="num">数字：</label>
+        <input type="number" id="num" />
+        <!-- 滑块 -->
+        <br>
+        <label for="rang">滑块：</label>
+        <input type="range" id="rang" />
+        <br>
+        <!-- 搜索框 -->
+        <label for="search">搜索框：</label>
+        <input type="search" id="search" />
+        <br>
+        <!-- 隐藏域 -->
+        <label for="hidden">隐藏域</label>
+        <!-- 需要使用查看元素才能看得到hidden元素 -->
+        <input type="hidden">
+        <br>
+        <!-- 只读和禁用（只读只能读取不能修改，禁用：直接是灰色的） -->
+        <input value="我是只读的" readonly />
+        <input type="button" value="我是禁用的" disabled />
+        <br>
+        <!-- placeholder框里面的默认提示信息 -->
+        <label for="sea">搜索框</label>
+        <input type="search" placeholder="请输入电话号码" id="sea" />
+        <br>
+        <!-- required必填项 -->
+        <label for="email">邮箱</label>
+        <input type="email" required id="email" />
+        <br>
+        <!-- 正则表达式验证-->
+        <label for="pattern">电话号码验证</label>
+        <input type="text" pattern="^1[358]\d{9}">
+    </form>
+</body>
+
+</html>

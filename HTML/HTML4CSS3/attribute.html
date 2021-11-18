@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+</head>
+<style>
+    * {
+        /* 文本装饰，去超链接下划线  */
+        text-decoration: none;
+    }
+    
+    div {
+        width: 50px;
+        height: 50px;
+        background-color: purple;
+        text-align: center;
+        display: inline-block;
+        line-height: 50px;
+    }
+    /* 属性选择器 */
+    /* a[id]所有a标签里只要设置了id属性的所有html元素 */
+    
+    div[id] {
+        background: yellow;
+    }
+    /* a标签里id属性的值等于one的html元素 */
+    
+    div[id=one] {
+        background: red;
+    }
+    /* a标签里class属性值包含towthree的所有html元素 */
+    
+    div[class*=towthree] {
+        background: pink;
+    }
+    /* a标签里class属性值以four-five开头的所有html元素 */
+    
+    div[class^=four-five] {
+        background: blue;
+    }
+    /* a标签里class属性值以six-seven结尾的所有html元素 */
+    
+    div[class$=six-seven] {
+        background: tomato;
+    }
+    
+    a:hover {
+        background-color: white;
+    }
+</style>
+
+<body>
+    <div id="one">
+        <a href="">1</a>
+    </div>
+    <div class="towthree">
+        <a href="">2</a>
+    </div>
+    <div class="towthree">
+        <a href="">3</a>
+    </div>
+    <div class="four-five">
+        <a href="">4</a>
+    </div>
+    <div class="four-five">
+        <a href="">5</a>
+    </div>
+    <div class="six-seven">
+        <a href="">6</a>
+    </div>
+    <div class="six-seven">
+        <a href="">7</a>
+    </div>
+    <div class="six-seven">
+        <a href="">8</a>
+    </div>
+    <div>
+        <a href="">9</a>
+    </div>
+    <div id="ten">
+        <a href="">10</a>
+    </div>
+</body>
+
+</html>

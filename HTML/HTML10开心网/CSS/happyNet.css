@@ -1,0 +1,549 @@
+/* 清除所有元素的内外边距 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 清除所有超链接的下划线  */
+
+a {
+    text-decoration: none;
+}
+
+
+/* 清除li前面的的小圆点 */
+
+li {
+    list-style: none;
+}
+
+
+/* 最外边大盒子 */
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+
+/* 整个头部部分 */
+
+header {
+    position: relative;
+    height: 60px;
+    background: linear-gradient(to bottom, #ce003b, #d05b79);
+    border: none;
+}
+
+
+/* 整个头部部分nav */
+
+.clear {
+    position: relative;
+}
+
+
+/* 父级边框塌陷 */
+
+.clear::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.title {
+    width: 8%;
+    height: 78%;
+    position: absolute;
+    left: 280px;
+    top: 20px;
+    text-align: center;
+    background: url(../image/btn-01.gif) 0px 0px no-repeat;
+    border-radius: 7px 7px 0 0;
+    border: 0;
+    padding-top: 10px;
+}
+
+.title>ul>li>a {
+    color: red;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* 头部登录div */
+
+.login {
+    border: none;
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+/* 头部登陆里的ul-li */
+
+.login>ul>li {
+    float: left;
+}
+
+
+/* 头部登录部分的a */
+
+.login>ul>li>a {
+    font-size: 14px;
+    color: white;
+}
+
+
+/* 登录部分的竖线 */
+
+.login>ul>li>span {
+    margin: 0 10px;
+    color: white;
+}
+
+
+/* 头部登陆里的ul-li-a标签，悬浮效果加上文字下划线 */
+
+.login>ul>li>a:hover {
+    color: white;
+    font-weight: 900;
+    border-bottom: 2px solid white;
+}
+
+
+/* 中间部分左边list列表部分 */
+
+section {
+    position: relative;
+    margin-top: 20px;
+}
+
+.list-left {
+    float: left;
+    width: 200px;
+    margin-right: 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.list-left>ul>li {
+    background: linear-gradient(to bottom, #ffffff, #f8f8f8, #e8e8e8, #eaeaea, #f1eff0);
+    line-height: 30px;
+}
+
+.list-left>ul>li>a {
+    color: black;
+}
+
+.list-left>ul>li>img {
+    margin: 0 15px 0 10px;
+}
+
+.list-left>ul>li>span {
+    float: right;
+    margin-right: 35px;
+    color: rgb(194, 183, 183);
+    padding-top: 5px;
+}
+
+.list-left>ul>li>a:hover {
+    font-weight: 700;
+}
+
+.list-left>ul>li:hover {
+    background: linear-gradient(to right, #ed9774, #e98b67, #e17b53, #db683c, #d75e31, #d0501f, #cf4916);
+}
+
+.imgAdvg {
+    float: left;
+}
+
+.imgAdvg>img {
+    height: 212px;
+    width: 680px;
+    border-radius: 10px;
+}
+
+.even {
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    top: 180px;
+    left: 700px;
+}
+
+.even>ul>li {
+    float: left;
+}
+
+.even>ul>li>a>span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(207, 201, 201);
+    margin: 0 2px;
+    padding: 2px 6px 10px;
+}
+
+.even>ul>li>a>span:hover {
+    background: red;
+}
+
+.even>ul>li:nth-of-type(1)>a>span {
+    background: red;
+    color: white;
+}
+
+.even>ul>li:nth-of-type(1):hover>a>span {
+    color: black;
+}
+
+
+/* 中间右边表单登录部分 */
+
+.loginForm {
+    text-align: center;
+    border: 1px solid rgb(177, 170, 170);
+    border-radius: 10px;
+    margin-left: 15px;
+    float: left;
+    width: 285px;
+    height: 212px;
+    line-height: 40px;
+}
+
+.loginForm>h2 {
+    margin-left: -115px;
+    font-size: 16px;
+    color: rgb(138, 135, 135);
+}
+
+.loginForm>input[type*=text] {
+    border: 1px solid rgb(194, 186, 186);
+    height: 20px;
+}
+
+.loginForm>input[type*=password] {
+    border: 1px solid rgb(196, 187, 187);
+    height: 20px;
+}
+
+.loginForm>input[type*=submit] {
+    background: rgb(211, 12, 12);
+    width: 45px;
+    height: 20px;
+    border: none;
+    color: rgb(255, 254, 254);
+}
+
+.loginForm>a {
+    color: rgb(69, 185, 231);
+}
+
+.loginForm>a:nth-of-type(1) {
+    margin-right: 20px;
+}
+
+
+/* 中间游戏选区部分 */
+
+.Game-left {
+    position: absolute;
+    left: 0px;
+    top: 230px;
+    width: 896px;
+    height: 212px;
+    border: 1px solid rgb(196, 189, 189);
+    border-radius: 5px;
+}
+
+.Game-left-title {
+    width: 895px;
+    height: 30px;
+    line-height: 30px;
+    background: rgb(243, 240, 240);
+    border: 1px solid rgb(189, 184, 184);
+    border-radius: 5px;
+}
+
+.Game-left-title>ul>li {
+    float: left;
+    margin: 0 10px 0 0;
+    color: rgb(194, 184, 184);
+}
+
+.Game-left-title>ul>li>a {
+    color: rgb(190, 184, 184);
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+.Game-left-title>ul>li:nth-of-type(1)>a {
+    font-weight: 900;
+    color: rgb(104, 9, 9);
+}
+
+.Game-left-title>ul>li:nth-of-type(1)~li>a:hover {
+    color: red;
+}
+
+.Game-left-gameOne {
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 425px;
+    border: 1px solid rgb(177, 171, 171);
+    border-radius: 5px;
+}
+
+.Game-left-gameOne>div:nth-of-type(1) {
+    float: left;
+}
+
+.Game-left-gameOne>div:nth-of-type(1)>img {
+    margin-left: 10px;
+}
+
+.Game-left-gameOne>div:nth-of-type(1)>img:hover {
+    transform: translate(-10px, 0);
+    transition: all 0.6s ease-in-out;
+}
+
+.Game-left-gameOne>div:nth-of-type(2) {
+    font-size: 16px;
+    margin-left: 10px;
+    float: left;
+    line-height: 25px;
+}
+
+.Game-left-gameOne>div:nth-of-type(2)>ul>input:nth-of-type(1) {
+    width: 45px;
+    height: 30px;
+    background: white;
+    border: 1px solid rgb(184, 176, 176);
+    border-radius: 5px;
+}
+
+.Game-left-gameOne>div:nth-of-type(2)>ul>input:nth-of-type(2) {
+    width: 70px;
+    height: 30px;
+    background: rgb(26, 128, 168);
+    border: 1px solid rgb(189, 182, 182);
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.Game-left-gameTow {
+    margin-left: 20px;
+    margin-top: 21px;
+    width: 420px;
+    float: left;
+    border-top: 10px;
+    border: 1px solid rgb(173, 169, 169);
+    border-radius: 5px;
+}
+
+.Game-left-gameTow>div:nth-of-type(1) {
+    float: left;
+}
+
+.Game-left-gameTow>div:nth-of-type(1)>img {
+    margin-left: 10px;
+}
+
+.Game-left-gameTow>div:nth-of-type(1)>img:hover {
+    transform: translate(-10px, 0);
+    transition: all 0.6s ease-in-out;
+}
+
+.Game-left-gameTow>div:nth-of-type(2) {
+    font-size: 16px;
+    margin-left: 10px;
+    float: left;
+    line-height: 25px;
+}
+
+.Game-left-gameTow>div:nth-of-type(2)>ul>input:nth-of-type(1) {
+    width: 45px;
+    height: 30px;
+    background: white;
+    border: 1px solid rgb(177, 172, 172);
+    border-radius: 5px;
+}
+
+.Game-left-gameTow>div:nth-of-type(2)>ul>input:nth-of-type(2) {
+    width: 70px;
+    height: 30px;
+    background: rgb(26, 128, 168);
+    border: 1px solid rgb(180, 173, 173);
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+
+/* 新闻公告部分 */
+
+.Game-right {
+    float: right;
+    width: 285px;
+    height: 216px;
+    border: 1px solid rgb(180, 174, 174);
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.Game-right>h2 {
+    display: inline-block;
+    width: 275px;
+    line-height: 35px;
+    background: rgb(245, 240, 240);
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(168, 15, 15);
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.new>ul>li>span {
+    margin-left: 1px;
+    font-weight: 700;
+    color: rgb(38, 183, 240);
+}
+
+.new>ul>li>span:nth-of-type(1) {
+    margin-left: 10px;
+}
+
+.new>ul {
+    line-height: 24px;
+}
+
+.new>ul>li {
+    width: 285px;
+    display: inline-block;
+    line-height: 25px;
+    border-bottom: 1px dashed rgb(177, 173, 173);
+}
+
+.new>ul>li:last-child {
+    border-bottom: none;
+}
+
+.new>ul>li>a {
+    color: rgb(97, 95, 95);
+    margin-left: 15px;
+}
+
+.new>ul>li:hover {
+    transform: translate(-10px, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+.new>ul>li>a:hover {
+    color: red;
+}
+
+
+/* 中间角色扮演部分 */
+
+.cosplay-content {
+    position: absolute;
+    top: 460px;
+    width: 896px;
+    border-radius: 10px;
+    border: 1px solid rgb(196, 187, 187);
+}
+
+.cosplay-content>h2:nth-of-type(1) {
+    width: 886px;
+    display: inline-block;
+    line-height: 30px;
+    font-size: 14px;
+    color: rgb(153, 14, 14);
+    background: rgb(228, 220, 220);
+    border-radius: 10px 10px 0 0;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.cosplay-content>div {
+    text-align: center;
+    width: 223px;
+    float: left;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.cosplay-content>div>dl>dd:nth-of-type(3)>input:nth-of-type(1) {
+    width: 45px;
+    height: 30px;
+    background: white;
+    border: 1px solid rgb(177, 172, 172);
+    border-radius: 5px;
+}
+
+.cosplay-content>div>dl>dd:nth-of-type(3)>input:nth-of-type(1):hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.cosplay-content>div>dl>dd:nth-of-type(3)>input:nth-of-type(2) {
+    width: 70px;
+    height: 30px;
+    background: rgb(26, 128, 168);
+    border: 1px solid rgb(180, 173, 173);
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.cosplay-content>div>dl>dd:nth-of-type(3)>input:nth-of-type(2):hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.cosplay-content>div>dl>dd:nth-of-type(2)>span {
+    color: rgb(153, 14, 14);
+}
+
+.cosplay-content>div>img:hover {
+    transform: translate(-20px, 0) scale(1.2);
+    transition: all 0.8s ease-in-out;
+}
+
+
+/* 中间右边微博部分 */
+
+.weiboBoth {
+    position: absolute;
+    top: 460px;
+    left: 915px;
+    width: 285px;
+    height: 300px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.weiboBoth>img {
+    width: 140px;
+    border-radius: 10px;
+}
+
+.weiboBoth>img:nth-of-type(3) {
+    height: 100px;
+}
+
+
+/* header,
+section,
+footer {
+    width: 1000px;
+} */

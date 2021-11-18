@@ -1,0 +1,49 @@
+* {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.big {
+    width: 300px;
+}
+
+.title {
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    line-height: 35px;
+    background: linear-gradient(to bottom, #247cba, #d1e8f8)
+}
+
+.title p {
+    text-indent: 1.5em;
+}
+
+.subtitle {
+    color: #0f6bc8;
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    background: linear-gradient(to right, #bfe0f7, #ddeef9)
+}
+
+.subtitle p {
+    text-indent: 2em;
+}
+
+a {
+    color: black;
+}
+
+li a {
+    margin-right: 10px;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}

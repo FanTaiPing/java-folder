@@ -1,0 +1,19 @@
+.Pone {
+    font-size: 18px;
+    font-family: '楷体';
+    font-weight: 700;
+}
+
+.one {
+    font-size: 12px;
+    font-family: 'Times New Roman';
+    color: red;
+    font-weight: 700;
+}
+
+.tow {
+    font-size: 12px;
+    font-family: '宋体';
+    font-weight: 700;
+    line-height: 20px;
+}

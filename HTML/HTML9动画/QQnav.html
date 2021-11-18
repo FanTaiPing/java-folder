@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>QQ彩贝导航</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    header {
+        height: 60px;
+        background: linear-gradient(to bottom, white, rgb(236, 228, 228));
+        line-height: 60px;
+    }
+    
+    .nav-left>img {
+        vertical-align: middle;
+    }
+    
+    .container {
+        width: 1920px;
+        margin-top: 20px;
+    }
+    
+    .nav-left {
+        float: left;
+        margin: 0 120px 0;
+    }
+    
+    .nav-middle>ul {
+        float: left;
+    }
+    
+    .nav-middle>ul>li {
+        float: left;
+    }
+    
+    .nav-middle>ul>li>a {
+        position: relative;
+        color: black;
+    }
+    
+    .nav-middle>ul>li:nth-of-type(1)>a>span:nth-child(1) {
+        display: inline-block;
+        width: 50px;
+        height: 25px;
+        background: url(image/header_03.png) 0px 0px no-repeat;
+        position: absolute;
+        left: 0px;
+        top: -20px;
+    }
+    
+    .nav-middle>ul>li:nth-of-type(3)>a>span:nth-child(1) {
+        display: inline-block;
+        width: 50px;
+        height: 25px;
+        background: url(image/header_07.png) 0px 0px no-repeat;
+        position: absolute;
+        left: 0px;
+        top: -20px;
+    }
+    
+    .nav-middle>ul>li>span {
+        margin: 0 50px 0;
+    }
+    
+    .nav-middle>ul>li>a:hover {
+        color: red;
+    }
+    
+    .nav-middle>ul>li:nth-of-type(1):hover>a>span:nth-of-type(1) {
+        background: url(image/header_05.png) 1px -1px no-repeat;
+        animation: iconImg 2s linear both;
+    }
+    
+    .nav-middle>ul>li:nth-of-type(3):hover>a>span:nth-of-type(1) {
+        background: url(image/header_09.png) 1px -1px no-repeat;
+        animation: iconImg 2s linear both;
+    }
+    
+    .nav-right {
+        float: left;
+        margin-left: 100px;
+    }
+    
+    .nav-right>a>span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 50%;
+        padding: 2px 2px 2px 4px;
+        margin: 5px;
+    }
+    
+    .nav-right>a:nth-of-type(1)>span {
+        background: rgb(8, 238, 8);
+    }
+    
+    .nav-right>a:nth-of-type(2)>span {
+        background: rgb(85, 199, 245);
+    }
+    
+    .nav-right>a:nth-of-type(3)>span {
+        background: rgb(248, 111, 61);
+    }
+    
+    .nav-right>a>span:hover {
+        transform: rotate(3600deg) scale(1.5);
+        transition: all 0.6s ease-in-out;
+    }
+    /* 动画缓慢移出 动画的过渡效果 */
+    
+    @keyframes iconImg {
+        0% {
+            width: 20px;
+        }
+        33% {
+            width: 23px;
+        }
+        66% {
+            width: 46px;
+        }
+        100% {
+            width: 69px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="nav-left">
+                <img src="image/logo_170x46.png" alt="">
+            </div>
+            <div class="nav-middle">
+                <ul>
+                    <li><a href=""><span></span>返回商城</a><span>|</span></li>
+                    <li><a href="">商旅频道</a><span>|</span></li>
+                    <li><a href=""><span></span>积分商城</a><span>|</span></li>
+                    <li><a href="">商旅频道</a><span>|</span></li>
+                    <li><a href="">了解彩贝</a><span>|</span></li>
+                    <li><a href="">彩贝活动</a><span>|</span></li>
+                    <li><a href="">个人中心</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href=""><span>论</span></a>
+                <a href=""><span>微</span></a>
+                <a href=""><span>邮</span></a>
+            </div>
+        </header>
+    </div>
+
+</body>
+
+</html>

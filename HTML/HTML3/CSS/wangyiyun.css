@@ -1,0 +1,25 @@
+header a {
+    color: red;
+}
+
+input[type*=text] {
+    background: #ffffed;
+    font-size: 18px;
+}
+
+input[type*=pass] {
+    background: lightblue;
+}
+
+section img:first-of-type {
+    width: 500px;
+    height: 350px;
+}
+
+section li {
+    color: dodgerblue;
+}
+
+footer a {
+    color: purple;
+}

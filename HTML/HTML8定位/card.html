@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>花样链接卡</title>
+</head>
+<style>
+    * {
+        text-decoration: none;
+    }
+    
+    .container {
+        width: 300px;
+        height: 300px;
+        border: 1px solid rgb(238, 11, 181);
+    }
+    
+    .container>div {
+        width: 100px;
+        height: 100px;
+        background: rgb(238, 11, 181);
+        text-align: center;
+    }
+    
+    .container>div>a {
+        color: white;
+        line-height: 100px;
+    }
+    
+    .container>div:nth-of-type(2) {
+        position: relative;
+        left: 200px;
+        top: -100px
+    }
+    
+    .container>div:nth-of-type(4) {
+        position: relative;
+        left: 200px;
+        top: -100px;
+    }
+    
+    .container>div:nth-of-type(5) {
+        position: relative;
+        top: -300px;
+        left: 100px;
+    }
+    
+    .container>div:hover {
+        background: rgb(12, 183, 235);
+    }
+    
+    .container>div:hover>a {
+        background: rgb(12, 183, 235);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div><a href="#">链接1</a></div>
+        <div><a href="#">链接2</a></div>
+        <div><a href="#">链接3</a></div>
+        <div><a href="#">链接4</a></div>
+        <div><a href="#">链接5</a></div>
+    </div>
+</body>
+
+</html>

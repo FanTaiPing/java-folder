@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>旋转按钮</title>
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .list>ul>li {
+        float: left;
+        margin: 10px;
+    }
+    /* 解决父级边框塌陷问题 */
+    
+    .list::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+    
+    .list>ul>li>a>img:hover {
+        transform: rotate(2800deg) scale(2);
+        /* 过滤效果，all代表所有css属性，1s是1秒的时间，缓入缓出效果 */
+        transition: all 1s ease-in-out;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>顺时针旋转360度放大1.5倍</h1>
+        <div class="list">
+            <ul>
+                <li>
+                    <a href="#"><img src="image/delicious.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="image/facebook.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="image/rss.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="image/twitter.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="image/yahoo.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Bootstrap 的 CSS 文件 -->
+<link href="bootstrap5.1/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="bootstrap5.1/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="css/index.css">
+
+<body>
+
+    <div class="container-fluid">
+        <header>
+            <div class="row head">
+                <p>古诗文后台管理系统</p>
+            </div>
+            <div>
+            </div>
+            <div class="container-fluid border-bottom py-3">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-auto d-flex p-3">
+                    </div>
+                    <div class="col-auto d-flex justify-content-center align-items-center w-75">
+                        <form action="" class="me-4 w-75">
+                            <div class="row">
+                                <table>
+                                    <tr>
+                                        <td><label>条件一</label></td>
+                                        <td><input type="text" class="form-control search_input" placeholder="搜索..."></td>
+                                        <td><label>条件二</label></td>
+                                        <td><input type="text" class="form-control search_input" placeholder="搜索..."></td>
+                                        <td><label>条件三</label></td>
+                                        <td><input type="text" class="form-control search_input" placeholder="搜索..."></td>
+                                        <td><button class="btn-info btn-info-select">查询</button></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </form>
+                        <div class="dropdown text-end">
+                            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="image/root.jfif" alt="用户名头像" class="rootImage rounded-circle">
+                            </a>
+                            <ul id="showul" class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style>
+                                <li><a href="" class="dropdown-item">个人信息</a></li>
+                                <li><a href="" class="dropdown-item">设置</a></li>
+                                <li><a href="" class="dropdown-item">轮廓</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a href="" class="dropdown-item">登出</a></li>
+                            </ul>
+                        </div>
+                        <span class="user">欢迎用户名登录</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid gap-3 d-grid">
+
+                <div class="row">
+                    <div class="col-2 bg-light border rounded-3 left_list">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        用户管理
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">用户信息列表</div>
+                                    <div class="accordion-body">作者信息列表</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-10 border rounded-3 bg-light">
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <footer>
+
+        </footer>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#dropdownlist_user_author").hide();
+        $("#dropdownlist").click(function() {
+            $("#dropdownlist_user_author").show();
+            // $("#dropdownlist_user_author").toggle();
+        })
+    });
+</script>
+
+</html>

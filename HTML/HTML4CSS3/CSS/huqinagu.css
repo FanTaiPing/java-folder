@@ -1,0 +1,27 @@
+h2{
+    color: #003580;
+}
+#pOne{
+    color: #000033;
+    font-size: 14px;
+}
+.spanOne{
+    color: #f00;
+}
+.spanTwo{
+    color: #1f87cc;
+}
+.spanThree{
+    color: #faa53b;
+}
+.spanFour{
+    color: #0d7114;
+}
+.imageOne{
+    width: 100px;
+    height: 160px;
+}
+.imageTwo{
+    width: 200px;
+    height: 130px;
+}
