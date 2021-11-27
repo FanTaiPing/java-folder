@@ -1,0 +1,27 @@
+.mybody{
+    background: url("../images/up-bg.jpg") center;
+}
+.container-fluid-m {
+    padding-left: 125px;
+    width: 860px !important;
+    margin: auto !important;
+    background-color: #e5e3e3;
+
+}
+.button-w{
+    text-align: center;
+    vertical-align: middle;
+}
+.button-w>button{
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 100px;
+    text-align: center;
+}
+label{
+    font-weight: 900;
+}
+.container-fluid>div>.p{
+    font-weight: 900;
+    font-size: 26px;
+}

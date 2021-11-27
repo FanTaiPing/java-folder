@@ -1,0 +1,60 @@
+package service.impl;
+
+import dao.DynastyDao;
+import dao.impl.DynastyDaoImpl;
+import entity.Dynasty;
+import entity.PageBean;
+import entity.User;
+import service.DynastyService;
+
+import java.util.List;
+
+/**
+ * @author y
+ */
+public class DynastyServiceImpl implements DynastyService {
+    private DynastyDao dynastyDao = new DynastyDaoImpl();
+    private PageBean<Dynasty> pb = null;
+
+    @Override
+    public PageBean<Dynasty> findAllDynasty(int currentPage, int rows) {
+        //创建一个空的PageBean对象
+        pb = new PageBean<Dynasty>();
+
+        //判断当前页码是否小于1，如果小于1的话，将当前页码置为1
+        if (currentPage < 1) {
+            currentPage = 1;
+        }
+
+        //将参数设置到pb对象里面
+        pb.setCurrentPage(currentPage);
+        pb.setRows(rows);
+
+        //获取总记录数
+        int totalCount = dynastyDao.countDynasty();
+        //将总记录数设置到pb对象里
+        pb.setTotalCount(totalCount);
+
+        //计算总页码
+        int totalPage = totalCount % rows == 0 ? (totalCount / rows) : (totalCount / rows) + 1;
+        //将总页码数设置到pb对象里面
+        if (currentPage > totalPage) {
+            currentPage = totalPage;
+        }
+        pb.setTotalPage(totalPage);
+
+        //将每页的数据设置到pb对象里
+        //计算开始的页码
+        //先计算初始的页码索引 start = (当前页码-1) * rows(每页显示的数据条数)
+        int start = (currentPage - 1) * rows;
+        List<Dynasty> list = dynastyDao.findAllDynasty(start, rows);
+        //将list列表添加到pb对象里
+        pb.setList(list);
+        return pb;
+    }
+
+    @Override
+    public int deleteDynastyById(int id) {
+        return dynastyDao.deleteDynastyById(id);
+    }
+}

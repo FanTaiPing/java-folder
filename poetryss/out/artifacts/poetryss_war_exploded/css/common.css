@@ -1,0 +1,262 @@
+/*登录注册模块*/
+.container{
+    width: 550px;
+    height: 500px;
+}
+/*登录/注册按钮*/
+.my_btn{
+    width: 120px;
+    background-color: #25cff2;
+    text-align:center;
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+    margin: auto;
+}
+/*label标签样式*/
+.label_textColor{
+    color: #25cff2;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+/*注册table标签样式*/
+.reg_table{
+    width: 450px;
+}
+/*用户头像*/
+.rootImage {
+    width: 35px;
+    height: 35px;
+}
+
+.left_list {
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.head {
+    height: 100px;
+}
+
+.head>p {
+    font-size: 50px;
+    background: -webkit-linear-gradient(90deg, #ACB6E5, #86FDE8);
+}
+
+.user {
+    margin-left: 20px;
+    font-size: 18px;
+
+}
+
+.search_input {
+    width: 150px;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.accordion-body:hover {
+    background-color: gainsboro;
+}
+
+.btn-info-select {
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+}
+/*显示用户名样式*/
+.span_root{
+    font-size: 22px;
+    color: #25cff2;
+}
+.root_img{
+    width:100px;
+    height:70px;
+    display:inline-block;
+    Object-fit:cover
+}
+td{
+    text-align: center;
+    vertical-align: middle !important;
+}
+th{
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+.time{
+    color: #25cff2;
+    font-weight: 900;
+    font-size: 20px;
+}
+.btn_btn{
+    width: 100px;
+    height: 40px;
+}
+.reg_a{
+    color: red;
+}
+.reg_a:hover{
+    font-weight: 900;
+}
+/*共几页样式*/
+.totalCount{
+    font-size:22px;
+    margin-left:10px;
+    line-height: 50px;
+    text-align: center !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+/*页面信息显示标题*/
+.form-show{
+    font-size: 30px;
+    font-weight: 900;
+    width: 100%;
+}
+
+/*删除选中和添加诗词部分样式*/
+.form-show>tr>td:nth-of-type(1){
+    width: 660px!important;
+
+}
+.insert_btn_span{
+    float: right;
+    margin-right: 40px;
+}
+/*添加按钮样式*/
+.insertButton{
+    border-radius: 5px;
+    height: 40px !important;
+    width: 100px !important;
+    background-color: #8d8787;
+    font-size: 18px;
+}
+
+.insertButton:hover{
+    background-color: #f1dfdf;
+    color: #1c1c1c;
+}
+p{
+    font-size: 28px;
+
+}
+
+
+
+
+/**
+登录部分css
+ */
+#login_wrap {
+    width:100%;
+    min-width: 1300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.login-box {
+    width: 380px;
+    height: 350px;
+    position: absolute;
+    top: 100px;
+    right:170px;
+    background: #fff;
+}
+.title {
+    height: 80px;
+    line-height: 80px;
+    background: #f3dc79;
+    font-size: 22px;
+    padding:0 30px;
+}
+.title img {
+    float: left;
+    margin-top: 12px;
+    margin-right: 15px;
+}
+.login_inner {
+    overflow: hidden;
+    padding: 10px 50px;
+}
+
+.alert {
+    margin: 0 auto;
+    padding: 6px 10px;
+    border: 1px solid transparent;
+    text-align: left;
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    margin-bottom: 17px;
+    font-size: 12px;
+}
+.login_inner form{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.login_inner input {
+    display: inline-block;
+    width: 246px;
+    height: 26px;
+    border: 1px solid #d8d8d8;
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+    padding: 6px 0 6px 12px;
+    box-shadow: 0 0 5px #fff;
+    outline: none;
+    transition: box-shadow 0.25s linear 0s;
+    -webkit-transition: box-shadow 0.25s linear 0s;
+    margin-bottom: 17px;
+}
+.verify input {
+    width: 95px;
+    margin-right: 20px;
+    float: left;
+    margin-bottom: 0;
+}
+
+.submit_btn button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #f6de9f;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+}
+.auto_login {
+    margin-top: 15px;
+}
+.submit_btn .checkbox {
+    float: left;
+    width: 17px;
+    margin: 7px 5px 0 54px;
+}
+.submit_btn  span {
+    line-height: 35px;
+}
+
+.reg {
+    border-top: 1px solid #eeeeee;
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #f1f1f1;
+    text-align: center;
+    font-size: 16px;
+}
+.reg a {
+    color: #fc7f7f;
+}
