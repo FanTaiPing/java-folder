@@ -1,0 +1,188 @@
+.navbar>.container {
+    width: 62vw;
+}
+
+* {
+    border-radius: 0 !important;
+}
+
+a {
+    color: var(--dark);
+}
+
+a:hover {
+    color: var(--dark);
+}
+
+
+/* .navbar-brand {
+    padding: 5px 5px;
+    border: 3px solid #d00807;
+} */
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.navbar-nav>li {
+    font-size: large;
+    margin: 0 10px;
+}
+
+.nav-link:focus {
+    font-size: large;
+    color: rgba(0, 0, 0, .9) !important;
+}
+
+.form-control:active,
+.form-control:focus {
+    border-color: var(--gray-dark);
+    box-shadow: 0 0 0 0.2rem rgb(52 58 64 / 50%);
+}
+
+.page-link:focus {
+    box-shadow: 0 0 0 0.2rem rgb(52 58 64 /0);
+}
+
+.page-link {
+    background-color: #fafafa;
+    border-color: #dee2e6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.15rem 0.3rem;
+    margin: 0.225rem 0.4rem;
+    color: #3d3d3d;
+    border-radius: 0;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgb(255 255 255 / 0);
+}
+
+/*.btn:hover {*/
+/*    color: black;*/
+/*}*/
+
+.btn-active,
+.nav-link.active {
+    color: black;
+    border-bottom: 0.1rem solid #c2101099;
+}
+
+
+/* .navbar-brand {
+    padding-left: 12px;
+    padding-right: 12px;
+    border-left: 0.3rem solid #c21010bd;
+    border-bottom: 0.3rem solid #c21010bd;
+} */
+
+.vw-50 {
+    width: 50vw;
+}
+
+.vw-60 {
+    width: 60vw;
+}
+
+.card {
+    margin: 30px 0;
+    border-radius: 0;
+}
+
+.full-poetry .card-body {
+    padding-bottom: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+.explanation>div {
+    padding-top: 0.8rem;
+}
+
+.card-title {
+    margin-right: 12px;
+}
+
+.breadcrumb {
+    border-radius: 0;
+    margin-top: 18px;
+}
+
+
+/* .breadcrumb-item>a {
+    color: var(--dark);
+    padding: 0 4px;
+    padding-bottom: 3px;
+} */
+
+.bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: 0.25rem;
+}
+
+.bd-callout p {
+    line-height: 1.6;
+    text-indent: 2rem;
+}
+
+.classify {
+    margin-top: 20px;
+}
+
+.classify>div>div {
+    padding-left: 50px;
+}
+
+.pinyin a {
+    font-size: large;
+}
+
+.text-underlien {
+    text-decoration: underline;
+}
+
+.margin-r-lg {
+    margin: 10px;
+    margin-right: 85%;
+}
+
+footer {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.collapse nav{
+    width: 100%;
+}
+
+.appreciation p{
+    text-indent: 32px;
+}
+
+.res{
+    font-size: smaller;
+    line-height: 1;
+}
+
+.m-top-lg{
+    margin-top: 9em;
+}
+
+.card-footer,
+.navbar{
+    background-color:rgba(0,0,0,0.06) !important;
+}
+
+.page-item.disabled>a{
+    color: rgb(148 148 148 / 80%) !important;
+}
