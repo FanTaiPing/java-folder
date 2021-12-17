@@ -27,7 +27,7 @@
 		<c:forEach items="${list}" var="user" varStatus="s">
 			<c:if test="${s.count %2 ==0 }">
 				<tr style="background-color: red">
-					<%-- 					<td>${s.count}</td>
+					<%--<td>${s.count}</td>
 					<td>${user.id }</td>
 					<td>${user.username }</td>
 					<td>${user.password }</td> --%>
