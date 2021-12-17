@@ -18,8 +18,20 @@
         <li>这是第 8 个li</li>
         <li>这是第 9 个li</li>
     </ul>
+
+
+    <!-- 需求：把、src/image/logo.jpg 设置给src 属性 -->
+    <img src="" alt="" class="box"/>
 </body>
 <!-- <script src="./index.js"></script> -->
 <!-- main.js 中包含了自己写的index.html、index.js和jquery.js的代码 -->
-<script src="../dist/main.js"></script>
+
+<!-- 以前默认生成的js -->
+<!-- <script src="../dist/main.js"></script> -->
+
+<!-- 当我们修改了打包输出文件的名称之后，需要重新引入js文件 -->
+<!-- <script src="../dist/bundle.js"></script> -->
+
+<!-- 加载和引用内存中的bundle.js -->
+<script src="/bundle.js"></script>
 </html>
