@@ -1,0 +1,11 @@
+/c3p0-config.xml
+/dao/
+/datasource/
+/db.properties
+/druid.properties
+/entity/
+/filter/
+/service/
+/servlet/
+/test/
+/utils/

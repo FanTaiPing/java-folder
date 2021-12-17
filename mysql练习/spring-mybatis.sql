@@ -24,7 +24,8 @@ insert into t_emp(`name`,age,bir) values('唐僧',120,now()),('孙悟空',1000,n
 
 select id,username from t_user where username = '刘备' and `password` = '123456';
 
+select id,name,age,bir from t_emp where id = 1;
 
-
+delete from t_emp where id =1 ;
 select * from t_user;
 select * from t_emp;
