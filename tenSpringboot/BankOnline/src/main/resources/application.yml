@@ -1,0 +1,22 @@
+server:
+  servlet:
+    context-path: /bankOnline/
+
+spring:
+  application:         #??????????
+    name: /bankOnline  # ?????
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/bankonline?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/   #thymeleaf?????????resources/templates?
+    suffix: .html    #????????
+
+mybatis:
+  mapper-locations: classpath:com/fan/mapper/*.xml
+  type-aliases-package: com.fan.entity

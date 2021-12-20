@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!--引入thymeleaf命名空间-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>个人网上银行---查询余额</title>
+</head>
+<body>
+<div>
+    <h1>你的账号余额是：</h1>
+    <h5 th:utext="${balance}"></h5>
+</div>
+</body>
+</html>

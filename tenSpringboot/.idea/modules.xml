@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BankOnline/BankOnline.iml" filepath="$PROJECT_DIR$/BankOnline/BankOnline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryManage/libraryManage.iml" filepath="$PROJECT_DIR$/libraryManage/libraryManage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tenSpringboot.iml" filepath="$PROJECT_DIR$/tenSpringboot.iml" />
+    </modules>
+  </component>
+</project>

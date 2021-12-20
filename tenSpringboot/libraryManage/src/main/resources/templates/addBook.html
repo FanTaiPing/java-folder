@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--引入thymeleaf命名空间-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>后台首页</title>
+</head>
+<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}"/>
+<link rel="stylesheet" type="text/css" th:href="@{/css/mycss.css}">
+<!--    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />-->
+<script th:src="@{/js/bootstrap.js}"></script>
+<!--    <script th:src="@{/js/bootstrap.min.js}"></script>-->
+<body>
+<div class="container main_color">
+    <div class="justify-content-center d-flex">
+        <form th:action="@{/book/addBook}" method="post">
+            <table class="table-primary">
+                <tr class="table-primary tr_th">
+                    <th colspan="8" style="text-align: center;font-size: 28px">增加图书</th>
+                </tr>
+                <tr class="table-primary">
+                    <td class="table-primary">书名<span class="span_span">(*)</span></td>
+                    <td><input type="text" name="name" required/></td>
+                    <td></td>
+                </tr>
+                <tr class="table-primary">
+                    <td class="table-primary">作者<span class="span_span">(*)</span></td>
+                    <td><input type="text" name="author" required/></td>
+                    <td></td>
+                </tr>
+                <tr class="table-primary">
+                    <td class="table-primary">出版社<span class="span_span">(*)</span></td>
+                    <td><input type="text" name="publish" required/></td>
+                    <td></td>
+                </tr>
+                <tr class="table-primary">
+                    <td class="table-primary">出版日期<span class="span_span">(*)</span></td>
+                    <td><input type="Date" name="publish_date" pattern="yyyy/MM/dd" required/></td>
+                    <td>(yyyy/MM/dd)</td>
+                </tr>
+                <tr class="table-primary">
+                    <td class="table-primary">页数</td>
+                    <td><input type="text" name="page"/></td>
+                    <td></td>
+                </tr>
+                <tr class="table-primary">
+                    <td class="table-primary">价格</td>
+                    <td><input type="text" name="price"/></td>
+                    <td></td>
+                </tr>
+                <tr class="table-primary">
+                    <td class="table-primary">内容摘要</td>
+                    <td><textarea name="content" class="textarea"></textarea></td>
+                    <td></td>
+                </tr>
+                <tr class="table-primary add_submit_back">
+                    <td colspan="3">
+                        <input type="submit" value="提交">
+                        <input type="button" value="返回" onclick="returnMain();">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+<script>
+    function returnMain(){
+        let url = '[[@{/}]]';
+        window.location.href=url+"book/findAllBook";
+    }
+</script>
+
+</body>
+</html>

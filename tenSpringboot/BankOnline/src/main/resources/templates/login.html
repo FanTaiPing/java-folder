@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--引入thymeleaf命名空间-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<div style="width: 500px;background-color:#33c8fa;margin: auto">
+    <h1>个人网上银行</h1>
+<!--        <form th:action="@{/account/login}" method="post">-->
+    <form>
+        <label for="cardNo">卡号：</label>
+        <input type="text" id="cardNo" required/><br/>
+        <label for="password">密码：</label>
+        <input type="password" id="password" required><br/><br/>
+        <input type="button" th:value="登录网上银行" onclick="login();">
+    </form>
+</div>
+
+<script th:src="@{/js/axios.min.js}"></script>
+<script>
+    var cardNo = document.getElementById('cardNo');
+    var password = document.getElementById('password');
+    var url = '[[@{/}]]';
+
+    function check() {
+        if (cardNo.value == "") {
+            alert("卡号不能为空");
+            return false;
+        }
+        if (password.value == "") {
+            alert("密码不能为空");
+            return false;
+        }
+        if (cardNo.value.length != 16) {
+            alert("卡号长度必须为16位");
+            return false;
+        }
+        if (password.value.length != 6) {
+            alert("密码长度必须为6位");
+            return false;
+        }
+        return true;
+    }
+
+    function login() {
+        if (check()) {
+            axios({
+                method: 'post',
+                url: url + 'account/login',
+                data: {
+                    cardNo: cardNo.value,
+                    password: password.value
+                }
+            })
+                .then((res) =>{
+                    //回调函数登录成功
+                    if (res.data.success) {
+                        alert(res.data.msg)
+                        window.location.href = url+"main";
+                        //登录失败
+                    } else {
+                        alert(res.data.msg);
+                    }
+                }).catch(function (err) {
+                console.log(err);
+            });
+        }
+    }
+</script>
+
+</body>
+</html>
