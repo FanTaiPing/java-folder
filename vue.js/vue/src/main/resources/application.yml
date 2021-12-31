@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:myslq://localhost:3306/vue?serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+mybatis:
+   type-aliases-package: com.fan.entity
+   mapper-locations:classpath

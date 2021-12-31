@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天气预报查询</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css"/>
+<script src="../static/js/bootstrap.js"></script>
+<body>
+<div id="app" class="container">
+    <input v-model="name"> <input type="button" value="搜索" class="btn btn-success" @click="search"><br/>
+    <span v-for="city,index in hotCitys" :key="index">
+        <a href="javascript:;">{{city}}</a>
+    </span>
+    <hr>
+    <span>
+        {{name}}，今天的天气是：{{message}}
+    </span>
+</div>
+</body>
+<!--引入vue.js-->
+<script src="../static/js/vue.js"></script>
+<script src="../static/js/axios.min.js"></script>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            name: '',
+            hotCitys: ['北京', '上海', '广东', '深圳', '杭州'],
+            message: '',
+        },
+        methods: {
+            //搜索城市名称
+            search() {
+                let _this = this;
+                axios.get('http://localhost:8080/city/find?name=' + this.name)
+                    .then((res) => {
+                        _this.message = res.data.message;
+                    });
+            },
+        },
+    });
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--引入thymeleaf命名空间-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<!--    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}" />-->
+<!--    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />-->
+<!--    <script th:src="@{/js/bootstrap.js}"></script>-->
+<!--    <script th:src="@{/js/bootstrap.min.js}"></script>-->
+<body>
+<div class="app">
+    <h1>你的名字是；{{name}}</h1>
+<!-- v-text 相当于javascript里的innerText-->
+    <h1 v-text="name"></h1>
+<!-- v-html 相当于JavaScript里的innerHtml-->
+    <h1 v-html="pwd"></h1>
+</div>
+</body>
+<script src="../static/js/vue.js"></script>
+<script>
+    new Vue({
+        el: ".app",
+        data: {
+            name: "你的名字是:孙悟空",
+            pwd:'<span style="color: red;">你的密码是：123456</span>'
+        },
+    });
+
+</script>
+</html>

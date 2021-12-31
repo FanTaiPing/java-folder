@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--引入thymeleaf命名空间-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>个人网上银行---转账</title>
+</head>
+<body>
+<div style="text-align: center">
+    <h1>当前操作：转账，请输入转入账号和金额后点击"转账"按钮</h1>
+    <form action="#">
+        <label>转入账号</label><input type="text" name="cardNo" id="cardNo" required><br/>
+        <label>转账金额</label><input type="number" step="0.01" name="money" id="money" required><br/>
+        <input type="button" value="转账" onclick="transfer();">
+    </form>
+</div>
+<script th:src="@{/js/axios.min.js}"></script>
+<script>
+    var cardNo = document.getElementById('cardNo');
+    var money = document.getElementById('money');
+    let url = '[[@{/}]]';
+
+    function checkCardNo() {
+        if (cardNo.value == "") {
+            alert("卡号不能为空");
+            return false;
+        }
+        if (money.value == "") {
+            alert("转账金额不能为空");
+            return false;
+        }
+        if (cardNo.value.length != 16) {
+            alert("卡号长度必须为16位");
+            return false;
+        }
+        if (money.value<=0) {
+            alert("转账金额不能为负数！");
+            return false;
+        }
+        if(money.value.lastIndexOf(".") !=-1 && money.value.lastIndexOf(".")<2){
+            alert("小数点后只能保留两位小数")
+            return false;
+        }
+        // var rex=/\d+[.]\d{2}/g;
+        // if(!money.value.test(rex)){
+        //     alert("小数点后只能保留两位小数")
+        //     return false;
+        // }
+
+        return true;
+    }
+
+    function transfer() {
+        if (checkCardNo()) {
+            axios({
+                method: 'post',
+                url: url + 'account/transfer',
+                data: {
+                    cardNo: cardNo.value,
+                    balance: money.value
+                }
+            })
+                .then((res) =>{
+                    //回调函数登录成功
+                    if (res.data.success) {
+                        alert(res.data.msg)
+                        top.location.href = url+"main?flag=success";
+                        //登录失败
+                    } else {
+                        alert(res.data.msg);
+                    }
+                }).catch(function (err) {
+                console.log(err);
+            });
+        }
+    }
+</script>
+</body>
+</html>

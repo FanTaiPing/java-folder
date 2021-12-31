@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue的函数带参传递</title>
+</head>
+<body>
+<div id="app">
+    <h1>动态改变的值：{{count}}</h1>
+    <h2>
+        <button @click="change(100,'张三')">点我动态改变上面的值</button>
+    </h2>
+</div>
+</body>
+<script src="../static/js/vue.js"></script>
+<script>
+    const app = new Vue({
+        el: "#app",
+        data: {
+            count: 10,
+        },
+        methods: {
+            change(count, name) {
+                this.count = count;
+                alert(name);
+            }
+        },
+    });
+</script>
+</html>

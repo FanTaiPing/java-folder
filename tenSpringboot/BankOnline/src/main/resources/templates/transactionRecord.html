@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--引入thymeleaf命名空间-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>交易记录查询界面</title>
+</head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}" />
+<!--    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />-->
+    <script th:src="@{/js/bootstrap.js}"></script>
+<!--    <script th:src="@{/js/bootstrap.min.js}"></script>-->
+<body>
+<h2>当前操作：查询交易记录。请选择时间范围后点"查询"按钮</h2>
+<form th:action="@{/transactionRecord}" method="post">
+<label>查询日期范围：</label>
+    <input type="datetime-local" id="dateOne" name="dateOne" class="form-control-sm" pattern="yyyy-MM-dd HH:mm:ss" required>
+    到 <input type="datetime-local" class="form-control-sm" id="dateTwo" name="dateTwo" pattern="yyyy-MM-dd HH:mm:ss" required>
+    <input type="submit" value="查询" class="btn btn-secondary">
+</form>
+<div class="table-responsive-md">
+    <table class="table">
+        <tr>
+            <th>交易日期</th>
+            <th>支出</th>
+            <th>存入</th>
+            <th>账户余额</th>
+            <th>交易类型</th>
+            <th>备注</th>
+        </tr>
+        <tr th:each="allRecord:${allRecord}">
+            <td th:text="${#dates.format(allRecord.transactionDate,'yyyy-MM-dd HH:mm:ss')}"></td>
+            <td th:text="${allRecord.expense}"></td>
+            <td th:text="${allRecord.income}"></td>
+            <td th:text="${allRecord.balance}"></td>
+            <td th:text="${allRecord.transactionType}"></td>
+            <td th:text="${allRecord.remark}"></td>
+        </tr>
+    </table>
+</div>
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item active"><a class="page-link" th:href="@{/transactionRecord(pageCurrent=1)}">首页</a></li>
+        <li class="page-item" th:if="${pageInfo.hasPreviousPage}"><a class="page-link" th:href="@{/transactionRecord(pageCurrent=${pageInfo.prePage})}">上一页</a></li>
+        <li th:if="${!pageInfo.hasPreviousPage}" class="page-item disabled"><a class="page-link">上一页</a></li>
+        <div th:each="nav:${pageInfo.navigatepageNums}">
+        <li th:if="${nav == pageInfo.pageNum}" class="page-item active"><a th:href="@{/transactionRecord(pageCurrent=${nav})}" class="page-link" th:text="${nav}"></a></li>
+        <li th:if="${nav !=pageInfo.pageNum}" class="page-item"><a class="page-link" th:href="@{/transactionRecord(pageCurrent=${nav})}" th:text="${nav}"></a></li>
+        </div>
+        <li class="page-item" th:if="${pageInfo.hasNextPage}"><a class="page-link" th:href="@{/transactionRecord(pageCurrent=${pageInfo.nextPage})}">下一页</a></li>
+        <li th:if="${!pageInfo.hasNextPage}" class="page-item disabled"><a class="page-link">下一页</a></li>
+        <li class="page-item active"><a class="page-link" th:href="@{/transactionRecord(pageCurrent=${pageInfo.getPages()})}">末页</a></li>
+    </ul>
+</nav>
+</body>
+</html>
