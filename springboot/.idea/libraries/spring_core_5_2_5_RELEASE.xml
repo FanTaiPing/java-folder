@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="spring-core-5.2.5.RELEASE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/springframework/spring-core/5.2.5.RELEASE/spring-core-5.2.5.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

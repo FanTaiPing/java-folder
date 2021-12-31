@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="doxia-module-xhtml-1.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/apache/maven/doxia/doxia-module-xhtml/1.4/doxia-module-xhtml-1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

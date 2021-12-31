@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--mapper  用来管理DAO接口
+namespace:当前mapper文件管理的是那个DAO接口(包，接口名)
+-->
+<mapper namespace="com.fan.dao.UserDao">
+    <!--  查询：select标签
+           id：接口中的方法名(唯一，不能重载)
+           parameterType:参数类型
+           resultType：处理结果集 自动封装
+           注意：sql语句后不要出现";"号
+           增删改不需要返回值类型resultType,参数为实体类对象
+      -->
+    <!--  注意：查询所有结果多个 resultType 还是使用要封装的实体类的全限定名(包，类)  -->
+    <select id="login" resultType="com.fan.entity.User">
+        select id, username
+        from t_user
+        where username = #{username}
+          and password = #{password}
+    </select>
+</mapper>

@@ -2,11 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>stop事件修饰符</title>
 </head>
+<style>
+    .aa {
+        background: red;
+        width: 200px;
+        margin: 20px auto;
+    }
+
+    .bb {
+        background: green;
+        width: 500px;
+        margin: 20px auto;
+    }
+</style>
 <body>
 <div id="app">
-
+    <div class="bb" @click.self="divBox">
+        <div class="aa" @click.stop="divClick">
+            <!--stop用来阻止外层事件冒泡-->
+            <button @click.stop="buttonClick">按钮</button>
+            <!--prevent用来阻止事件的默认行为（阻止访问百度）-->
+            <a href="http://www.baidu.com" @click.prevent.stop="aClick">百度</a>
+        </div>
+        <!--用来针对于当前标签的事件触发------------->
+        <div class="aa" @click.self="divClick">
+            <input type="button" value="按钮一" @click.once="btnClick">
+            <input type="button" value="按钮二" @click="btnClick">
+        </div>
+    </div>
 </div>
 </body>
 <!--引入vue.js-->
@@ -15,7 +40,23 @@
     const app = new Vue({
         el: "#app",
         data: {},
-        methods: {},
+        methods: {
+            divBox() {
+                alert("最外层的div被点击了");
+            },
+            divClick() {
+                alert("div被点击了");
+            },
+            buttonClick() {
+                alert("button被点击了");
+            },
+            aClick() {
+                alert("a标签被点击了");
+            },
+            btnClick() {
+                alert("按钮被点击了");
+            }
+        },
     });
 </script>
 </html>

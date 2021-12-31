@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jackson-datatype-jsr310-2.12.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.5/jackson-datatype-jsr310-2.12.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

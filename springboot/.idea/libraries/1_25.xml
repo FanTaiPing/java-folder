@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="1.25">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/yaml/snakeyaml/1.25/snakeyaml-1.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/yaml/snakeyaml/1.25/snakeyaml-1.25-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/yaml/snakeyaml/1.25/snakeyaml-1.25-javadoc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

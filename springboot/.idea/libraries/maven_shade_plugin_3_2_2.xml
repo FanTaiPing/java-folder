@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="maven-shade-plugin-3.2.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/apache/maven/plugins/maven-shade-plugin/3.2.2/maven-shade-plugin-3.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="asm-analysis-8.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/ow2/asm/asm-analysis/8.0/asm-analysis-8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

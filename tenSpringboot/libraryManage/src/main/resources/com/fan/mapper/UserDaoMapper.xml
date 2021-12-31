@@ -19,4 +19,10 @@ namespace:当前mapper文件管理的是那个DAO接口(包，接口名)
         from user
         where name = #{name}
     </select>
+
+    <select id="isExistsUser" parameterType="String" resultType="User">
+        select id, name, password, age, sex, nick_name, user_type
+        from user
+        where name = #{name}
+    </select>
 </mapper>

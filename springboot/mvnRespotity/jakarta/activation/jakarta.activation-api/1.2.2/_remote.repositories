@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Dec 10 12:31:04 CST 2021
+jakarta.activation-api-1.2.2.pom>nexus-aliyun=
+jakarta.activation-api-1.2.2-sources.jar>nexus-aliyun=
+jakarta.activation-api-1.2.2.jar>nexus-aliyun=
+jakarta.activation-api-1.2.2-javadoc.jar>nexus-aliyun=

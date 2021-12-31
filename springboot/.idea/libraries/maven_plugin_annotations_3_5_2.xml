@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="maven-plugin-annotations-3.5.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/apache/maven/plugin-tools/maven-plugin-annotations/3.5.2/maven-plugin-annotations-3.5.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

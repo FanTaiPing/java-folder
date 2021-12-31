@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="1.5.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/com/fasterxml/classmate/1.5.1/classmate-1.5.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/com/fasterxml/classmate/1.5.1/classmate-1.5.1-javadoc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

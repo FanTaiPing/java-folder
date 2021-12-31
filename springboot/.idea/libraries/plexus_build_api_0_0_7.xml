@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plexus-build-api-0.0.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

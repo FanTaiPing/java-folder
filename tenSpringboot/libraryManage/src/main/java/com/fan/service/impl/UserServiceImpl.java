@@ -16,4 +16,9 @@ public class UserServiceImpl implements UserService {
     public User login(User user) {
         return userDao.login(user);
     }
+
+    @Override
+    public User isExistsUser(String name) {
+        return userDao.isExistsUser(name);
+    }
 }

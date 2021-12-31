@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="maven-dependency-tree-3.0.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/apache/maven/shared/maven-dependency-tree/3.0.1/maven-dependency-tree-3.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

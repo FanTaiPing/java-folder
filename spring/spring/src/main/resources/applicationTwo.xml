@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--bean管理-->
+<!--byName注入-->
+<!--    <bean id="empDao" class="com.fan.dao.impl.EmpDaoImpl"/>-->
+<!--    <bean id="empDaoTwo" class="com.fan.dao.impl.EmpDaoTwoImpl"/>-->
+
+<!--byType注入-->
+    <bean id="empDao" class="com.fan.dao.impl.EmpDaoTwoImpl"/>
+
+    <!--注册Service-->
+    <!--自动注入：
+    byName:根据注入的属性名与配置文件中bean的id匹配,一致则注入,不一致报错,可以有多个实现类
+    byType:根据注入的属性类型,与配置文件中的类型匹配,类型一致注入(在多个实现类时,会产生歧义),只能有一个实现类
+    byType @Autowired  byName @Resource-->
+<!--    <bean id="empService" class="com.fan.service.impl.EmpServiceImpl" autowire="byName"/>-->
+<!--    scope：不写默认为单例模式：singleton（在工厂中只创建一次）  scope:为prototype是多例模式（创建多次）-->
+    <bean id="empService" class="com.fan.service.impl.EmpServiceImpl" autowire="byType" scope="prototype" init-method="initEmpService" destroy-method="destoryEmpService"/>
+
+</beans>

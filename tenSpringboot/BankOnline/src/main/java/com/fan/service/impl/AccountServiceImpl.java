@@ -20,13 +20,17 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
-    @Transactional(propagation = Propagation.SUPPORTS)
-    public Double getAccountByCode(Long cardNo) {
+    public Account getAccountByCode(Long cardNo) {
         return accountDao.getAccountByCode(cardNo);
     }
 
     @Override
     public int updateMoney(double balance, String flag, Long cardNo) {
         return accountDao.updateMoney(balance,flag,cardNo);
+    }
+
+    @Override
+    public int updatePassword(String password,Long cardNo) {
+        return accountDao.updatePassword(password,cardNo);
     }
 }

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="maven-aether-provider-3.3.9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

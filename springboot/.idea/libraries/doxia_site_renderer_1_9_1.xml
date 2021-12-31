@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="doxia-site-renderer-1.9.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/apache/maven/doxia/doxia-site-renderer/1.9.1/doxia-site-renderer-1.9.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

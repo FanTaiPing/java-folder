@@ -14,13 +14,16 @@ namespace:当前mapper文件管理的是那个DAO接口(包，接口名)
            增删改不需要返回值类型resultType,参数为实体类对象
       -->
     <!--  注意：查询所有结果多个 resultType 还是使用要封装的实体类的全限定名(包，类)  -->
-    <select id="login" resultType="com.fan.entity.Account">
+    <sql id="login">
         select cardno, password, balance, status
         from account
+    </sql>
+    <select id="login" resultType="com.fan.entity.Account" parameterType="long">
+        <include refid="login"/>
         where cardNo = #{cardNo}
     </select>
 
-    <select id="getAccountByCode" parameterType="long" resultType="double">
+    <select id="getAccountByCode" parameterType="long" resultType="Account">
         select cardno, balance
         from account
         where cardNo = #{cardNo}
@@ -36,6 +39,16 @@ namespace:当前mapper文件管理的是那个DAO接口(包，接口名)
                 balance = balance - #{balance},
             </if>
         </set>
-            where cardNo=#{cardNo}
+        where cardNo=#{cardNo}
+    </update>
+
+    <update id="updatePassword">
+        update account
+        <set>
+            <if test="password != null and '' != password">
+                password = #{password},
+            </if>
+        </set>
+        where cardNo=#{cardNo}
     </update>
 </mapper>

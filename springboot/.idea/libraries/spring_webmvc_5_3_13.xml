@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="spring-webmvc-5.3.13">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/springframework/spring-webmvc/5.3.13/spring-webmvc-5.3.13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

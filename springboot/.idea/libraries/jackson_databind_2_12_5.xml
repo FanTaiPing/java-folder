@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jackson-databind-2.12.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/com/fasterxml/jackson/core/jackson-databind/2.12.5/jackson-databind-2.12.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

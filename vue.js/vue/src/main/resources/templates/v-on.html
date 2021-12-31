@@ -2,14 +2,39 @@
 <!--引入thymeleaf命名空间-->
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>v-on绑定事件调用函数</title>
 </head>
-    <!--    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}" />-->
-    <!--    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />-->
-    <!--    <script th:src="@{/js/bootstrap.js}"></script>-->
-    <!--    <script th:src="@{/js/bootstrap.min.js}"></script>-->
+<!--    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}" />-->
+<!--    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />-->
+<!--    <script th:src="@{/js/bootstrap.js}"></script>-->
+<!--    <script th:src="@{/js/bootstrap.min.js}"></script>-->
 <body>
-$END$
+<div id="app">
+    <h2>{{msg}}</h2>
+    <h2 v-text="msg"></h2>
+    <h1>点击下方按钮调用函数</h1>
+    <h2>
+        <!--v-on:事件名=“函数名（方法名）”-->
+        <button v-on:click="show">点我弹出alert</button>
+    </h2>
+
+</div>
 </body>
+<!--引入vue.js-->
+<script src="../static/js/vue.js"></script>
+<script>
+    const app = new Vue({
+        el: "#app",
+        data: {
+            msg: '欢迎来到迷你世界',
+        },
+        //方法函数都写在methods里面
+        methods: {
+            show: function () {
+                alert("我来了！！");
+            },
+        },
+    });
+</script>
 </html>

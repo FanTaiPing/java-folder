@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.louis.springboot.demo.dao.CraPersonMapper">
+  <resultMap id="BaseResultMap" type="com.louis.springboot.demo.model.CraPerson">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="tzyx" jdbcType="VARCHAR" property="tzyx" />
+    <result column="save_datetime" jdbcType="TIMESTAMP" property="saveDatetime" />
+    <result column="slzt" jdbcType="INTEGER" property="slzt" />
+    <result column="clyj" jdbcType="VARCHAR" property="clyj" />
+    <result column="modify_datetime" jdbcType="TIMESTAMP" property="modifyDatetime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, name, mobile, tzyx, save_datetime, slzt, clyj, modify_datetime
+  </sql>
+  <select id="selectByExample" parameterType="com.louis.springboot.demo.model.CraPersonExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from cra_person
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from cra_person
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from cra_person
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.louis.springboot.demo.model.CraPersonExample">
+    delete from cra_person
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.louis.springboot.demo.model.CraPerson">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into cra_person (name, mobile, tzyx, 
+      save_datetime, slzt, clyj, 
+      modify_datetime)
+    values (#{name,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR}, #{tzyx,jdbcType=VARCHAR}, 
+      #{saveDatetime,jdbcType=TIMESTAMP}, #{slzt,jdbcType=INTEGER}, #{clyj,jdbcType=VARCHAR}, 
+      #{modifyDatetime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.louis.springboot.demo.model.CraPerson">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into cra_person
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        name,
+      </if>
+      <if test="mobile != null">
+        mobile,
+      </if>
+      <if test="tzyx != null">
+        tzyx,
+      </if>
+      <if test="saveDatetime != null">
+        save_datetime,
+      </if>
+      <if test="slzt != null">
+        slzt,
+      </if>
+      <if test="clyj != null">
+        clyj,
+      </if>
+      <if test="modifyDatetime != null">
+        modify_datetime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="tzyx != null">
+        #{tzyx,jdbcType=VARCHAR},
+      </if>
+      <if test="saveDatetime != null">
+        #{saveDatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="slzt != null">
+        #{slzt,jdbcType=INTEGER},
+      </if>
+      <if test="clyj != null">
+        #{clyj,jdbcType=VARCHAR},
+      </if>
+      <if test="modifyDatetime != null">
+        #{modifyDatetime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.louis.springboot.demo.model.CraPersonExample" resultType="java.lang.Long">
+    select count(*) from cra_person
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update cra_person
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.name != null">
+        name = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mobile != null">
+        mobile = #{record.mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tzyx != null">
+        tzyx = #{record.tzyx,jdbcType=VARCHAR},
+      </if>
+      <if test="record.saveDatetime != null">
+        save_datetime = #{record.saveDatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.slzt != null">
+        slzt = #{record.slzt,jdbcType=INTEGER},
+      </if>
+      <if test="record.clyj != null">
+        clyj = #{record.clyj,jdbcType=VARCHAR},
+      </if>
+      <if test="record.modifyDatetime != null">
+        modify_datetime = #{record.modifyDatetime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update cra_person
+    set id = #{record.id,jdbcType=INTEGER},
+      name = #{record.name,jdbcType=VARCHAR},
+      mobile = #{record.mobile,jdbcType=VARCHAR},
+      tzyx = #{record.tzyx,jdbcType=VARCHAR},
+      save_datetime = #{record.saveDatetime,jdbcType=TIMESTAMP},
+      slzt = #{record.slzt,jdbcType=INTEGER},
+      clyj = #{record.clyj,jdbcType=VARCHAR},
+      modify_datetime = #{record.modifyDatetime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.louis.springboot.demo.model.CraPerson">
+    update cra_person
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="tzyx != null">
+        tzyx = #{tzyx,jdbcType=VARCHAR},
+      </if>
+      <if test="saveDatetime != null">
+        save_datetime = #{saveDatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="slzt != null">
+        slzt = #{slzt,jdbcType=INTEGER},
+      </if>
+      <if test="clyj != null">
+        clyj = #{clyj,jdbcType=VARCHAR},
+      </if>
+      <if test="modifyDatetime != null">
+        modify_datetime = #{modifyDatetime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.louis.springboot.demo.model.CraPerson">
+    update cra_person
+    set name = #{name,jdbcType=VARCHAR},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      tzyx = #{tzyx,jdbcType=VARCHAR},
+      save_datetime = #{saveDatetime,jdbcType=TIMESTAMP},
+      slzt = #{slzt,jdbcType=INTEGER},
+      clyj = #{clyj,jdbcType=VARCHAR},
+      modify_datetime = #{modifyDatetime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+
+
+  <select id="selectAllMap" parameterType="Map" resultType="java.util.Map">
+     select id,name ,mobile,tzyx,
+        date_format(save_datetime,'%Y-%m-%d %H:%i:%s') AS save_datetime,
+        -- case when (slzt = 0) then '未受理' when (slzt = 1) then '已受理' end AS slzt,
+        slzt,
+        clyj,
+        date_format(modify_datetime,'%Y-%m-%d %H:%i:%s') AS modify_datetime
+    from cra_person where 1=1
+    <!--<if test="_parameter.containsKey('mobile')">-->
+    <if test="mobile != null">
+      AND mobile = #{mobile,jdbcType=VARCHAR}
+    </if>
+    <if test="name != null">
+      AND name like concat('%',#{name,jdbcType=VARCHAR},'%')
+    </if>
+  </select>
+
+
+
+
+</mapper>

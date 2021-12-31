@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="guava-28.2-android">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/com/google/guava/guava/28.2-android/guava-28.2-android.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="spring-expression-5.3.13">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/springframework/spring-expression/5.3.13/spring-expression-5.3.13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

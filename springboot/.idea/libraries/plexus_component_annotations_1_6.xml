@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plexus-component-annotations-1.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

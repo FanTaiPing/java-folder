@@ -46,7 +46,7 @@ namespace:当前mapper文件管理的是那个DAO接口(包，接口名)
         update account
         <set>
             <if test="password != null and '' != password">
-                password = #{password}
+                password = #{password},
             </if>
         </set>
         where cardNo=#{cardNo}

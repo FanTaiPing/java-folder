@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plexus-archiver-3.7.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/codehaus/plexus/plexus-archiver/3.7.0/plexus-archiver-3.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

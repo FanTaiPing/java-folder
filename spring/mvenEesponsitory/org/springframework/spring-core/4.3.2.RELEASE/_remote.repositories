@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Dec 02 14:12:53 CST 2021
+spring-core-4.3.2.RELEASE.pom>nexus-aliyun=
+spring-core-4.3.2.RELEASE-sources.jar>nexus-aliyun=
+spring-core-4.3.2.RELEASE.jar>nexus-aliyun=
+spring-core-4.3.2.RELEASE-javadoc.jar>nexus-aliyun=

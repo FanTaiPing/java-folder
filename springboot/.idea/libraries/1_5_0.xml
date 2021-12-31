@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="1.5.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0-javadoc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="2.2.5.RELEASE1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/springframework/boot/spring-boot/2.2.5.RELEASE/spring-boot-2.2.5.RELEASE-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/springframework/boot/spring-boot/2.2.5.RELEASE/spring-boot-2.2.5.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/springframework/boot/spring-boot/2.2.5.RELEASE/spring-boot-2.2.5.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="file-management-3.0.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/apache/maven/shared/file-management/3.0.0/file-management-3.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

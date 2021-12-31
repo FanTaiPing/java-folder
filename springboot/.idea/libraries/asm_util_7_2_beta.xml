@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="asm-util-7.2-beta">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/ow2/asm/asm-util/7.2-beta/asm-util-7.2-beta.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

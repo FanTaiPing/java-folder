@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="spring-boot-buildpack-platform-2.5.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/springframework/boot/spring-boot-buildpack-platform/2.5.7/spring-boot-buildpack-platform-2.5.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+#端口号
+server:
+  port: 8080
+
+#指定在哪个环境生效配置
+spring:
+# 指定哪个环境配置生效  dev 为环境配置文件的简称
+  profiles:
+    active: dev

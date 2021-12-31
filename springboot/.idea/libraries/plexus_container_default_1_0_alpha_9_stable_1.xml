@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plexus-container-default-1.0-alpha-9-stable-1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

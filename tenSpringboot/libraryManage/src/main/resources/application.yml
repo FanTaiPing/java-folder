@@ -15,6 +15,6 @@ spring:
     cache: false  # 不缓存
 
 
-mybatis:
+mybatis-plus:
   mapper-locations: classpath:com/fan/mapper/*.xml
   type-aliases-package: com.fan.entity

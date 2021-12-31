@@ -1,4 +1,10 @@
 /*login.html界面css*/
+.banner_top {
+    background: deeppink !important;
+    height: 60px !important;
+    font-size: 30px;
+}
+
 .login_label {
     background: deeppink;
     width: 100px;
@@ -55,7 +61,7 @@ h2 {
     text-align: center;
 }
 
-.table-danger{
+.table-danger {
     border: 2px solid deeppink !important;
     text-align: center !important;
 }
@@ -77,10 +83,12 @@ h2 {
     color: red !important;
     font-weight: 900;
 }
-.table-primary{
+
+.table-primary {
     border: 2px solid deeppink !important;
     text-align: left !important;
 }
-.span_hidden{
-    display:none;
+
+.span_hidden {
+    display: none;
 }

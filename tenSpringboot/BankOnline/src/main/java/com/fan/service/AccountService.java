@@ -1,7 +1,6 @@
 package com.fan.service;
 
 import com.fan.entity.Account;
-import org.apache.ibatis.annotations.Param;
 
 public interface AccountService {
     /**
@@ -16,14 +15,21 @@ public interface AccountService {
      * @param cardNo
      * @return
      */
-    Double getAccountByCode(Long cardNo);
+    Account getAccountByCode(Long cardNo);
 
     /**
      *
      * @param balance 金额
      * @param flag 判断金额是增加还是减少
      * @param cardNo 卡号
-     * @return
+     * @return 记录条数
      */
     int updateMoney(double balance, String flag, Long cardNo);
+
+    /**
+     * 修改密码
+     * @param password
+     * @return
+     */
+    int updatePassword(String password,Long cardNo);
 }

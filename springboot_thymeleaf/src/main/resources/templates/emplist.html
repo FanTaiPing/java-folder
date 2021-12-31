@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--引入thymeleaf命名空间-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>emplist</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<div id="wrap">
+    <div id="top_content">
+        <div id="header">
+            <div id="rightheader">
+                <p>
+                    [[${#dates.format(new java.util.Date().getTime(),'yyyy/MM/dd hh:mm:ss')}]]
+                    <br/>
+                </p>
+            </div>
+            <div id="topheader">
+                <h1 id="title">
+                    <a href="#">main</a>
+                </h1>
+            </div>
+            <div id="navigation">
+            </div>
+        </div>
+        <div id="content">
+            <p id="whereami">
+            </p>
+            <h1>
+                Welcome!
+            </h1>
+            <table class="table">
+                <tr class="table_header">
+                    <td>
+                        ID
+                    </td>
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        Age
+                    </td>
+                    <td>
+                        Bir
+                    </td>
+                    <td>
+                        Operation
+                    </td>
+                </tr>
+
+                <tr th:each="emp:${empList}" th:clsss="${empStat.odd} ? 'odd'" class="row1">
+                    <td th:text="${emp.id}">
+                    </td>
+                    <td th:text="${emp.name}">
+                    </td>
+                    <td th:text="${emp.age}">
+                    </td>
+                    <td th:text="${#dates.format(emp.bir,'yyyy/MM/dd hh:mm:ss')}">
+                    </td>
+                    <td>
+                        <a href="javascript:void(0)" th:onclick="|javascript:del('${emp.id}')|">delete emp</a>&nbsp;
+                        <a th:href="@{/emp/updateEmp(id=${emp.id})}">update emp</a>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <input type="button" class="button" value="Add Employee" th:onclick="addEmp()"/>
+            </p>
+            <script>
+                function addEmp() {
+                    window.location.href = "/emp/addEmp"
+                }
+
+                function del(id) {
+                    if (confirm("您确定要删除id为；" + id + "的员工吗？")) {
+                        location.href = "/emp/deleteEmp?id=" + id;
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_bg">
+            ABC@126.com
+        </div>
+    </div>
+</div>
+</body>
+</html>

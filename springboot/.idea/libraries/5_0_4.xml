@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="5.0.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/ow2/asm/asm/5.0.4/asm-5.0.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/ow2/asm/asm/5.0.4/asm-5.0.4-javadoc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

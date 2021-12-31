@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="2.10.24">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.2/jackson-datatype-jdk8-2.10.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.2/jackson-datatype-jdk8-2.10.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.2/jackson-datatype-jdk8-2.10.2-javadoc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

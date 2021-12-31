@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>v-on的简写模式</title>
 </head>
-    <!--    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}" />-->
-    <!--    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />-->
-    <!--    <script th:src="@{/js/bootstrap.js}"></script>-->
-    <!--    <script th:src="@{/js/bootstrap.min.js}"></script>-->
 <body>
-$END$
+<div id="app">
+    <h1>我的年龄是：{{age}}</h1>
+    <h2>
+        <button v-on:click="add">点我加年龄</button>
+        <button @click="sub">点我减年龄</button>
+    </h2>
+
+</div>
 </body>
+<script src="../static/js/vue.js"></script>
+<script>
+    const app = new Vue({
+        el: "#app",
+        data: {
+            age:20,
+        },
+        methods: {
+            add(){
+                this.age++;
+            },
+            sub(){
+                this.age--;
+            },
+        },
+    });
+</script>
 </html>

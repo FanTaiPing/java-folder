@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="3.1.01">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/mockito/mockito-core/3.1.0/mockito-core-3.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/mockito/mockito-core/3.1.0/mockito-core-3.1.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/mockito/mockito-core/3.1.0/mockito-core-3.1.0-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="1.2.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

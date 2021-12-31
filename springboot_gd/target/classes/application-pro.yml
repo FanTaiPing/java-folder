@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://139.9.145.29:3306/vue_springboot?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: YYBrhr_2020
+# pagehelper   
+#pagehelper:
+#    helperDialect: mysql
+#    reasonable: true
+#    supportMethodsArguments: true
+#    params: count=countSql
+mybatis:
+  type-aliases-package: com.louis.springboot.demo.model
+  mapper-locations: classpath:com.louis.springboot.demo.sqlmap/*.xml
+

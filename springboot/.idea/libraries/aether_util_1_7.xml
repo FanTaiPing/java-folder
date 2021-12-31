@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="aether-util-1.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

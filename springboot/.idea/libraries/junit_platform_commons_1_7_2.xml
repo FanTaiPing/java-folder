@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="junit-platform-commons-1.7.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

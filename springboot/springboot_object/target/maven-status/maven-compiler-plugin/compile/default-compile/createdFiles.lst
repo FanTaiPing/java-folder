@@ -1,0 +1,5 @@
+com\fan\service\impl\DemoServiceImpl.class
+com\fan\SpringbootObjectApplication.class
+com\fan\service\DemoService.class
+com\fan\config\BeanConfig.class
+com\fan\controller\IndexController.class

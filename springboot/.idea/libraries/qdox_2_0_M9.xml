@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="qdox-2.0-M9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/com/thoughtworks/qdox/qdox/2.0-M9/qdox-2.0-M9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

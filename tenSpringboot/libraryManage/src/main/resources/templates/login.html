@@ -10,6 +10,9 @@
 <script th:src="@{/js/bootstrap.js}"></script>
 
 <body>
+<div class="container-fluid" style="background: deeppink !important;font-size: 42px;line-height: 100px;color: white;font-weight: 900;">
+    <div class="container justify-content-lg-start">图书管理系统</div>
+</div>
 <div class="container">
     <div class="login_box">
         <form th:action="@{/user/login}" method="post">
@@ -29,13 +32,7 @@
             <div class="d-grid gap-2 col-6 mx-auto">
                 <button class="btn btn-primary" type="submit">登录</button>
             </div>
-            <div>
-                <p th:if="${msg==null}">
-                    <span class="span_span span_hidden" th:text="${msg}"></span>
-                </p>
-                <p th:if="${msg !=null}">
-                    <span class="span_span" th:text="${msg}"></span>
-                </p>
+            <div th:if="${msg!=null}" class="alert alert-warning" th:text="${msg}">
             </div>
         </form>
     </div>

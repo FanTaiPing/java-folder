@@ -12,11 +12,11 @@ public interface AccountDao {
     Account login(Long cardNo);
 
     /**
-     * 查询余额
+     * 查询account
      * @param cardNo
      * @return
      */
-    Double getAccountByCode(Long cardNo);
+    Account getAccountByCode(Long cardNo);
 
     /**
      *
@@ -26,4 +26,12 @@ public interface AccountDao {
      * @return
      */
     int updateMoney(@Param("balance") double balance,@Param("flag") String flag,@Param("cardNo") Long cardNo);
+
+    /**
+     * 根据卡号修改密码
+     * @param password
+     * @param cardNo
+     * @return
+     */
+    int updatePassword(@Param("password")String password,@Param("cardNo") Long cardNo);
 }

@@ -9,90 +9,103 @@
 <body>
 <div id="app">
     <div class="container-fluid">
-        <ul class="nav justify-content-between bg-dark lh-3">
+        <ul class="nav justify-content-between bg-info lh-7">
             <li class="nav-item">
                 <a class="nav-link active fs-4" aria-current="page" href="#">用户管理系统</a>
             </li>
             <li class="nav-item justify-content-end">
-                <a class="nav-link fs-4" href="#">欢迎xxxx</a>
+                <a class="nav-link fs-4" href="#">欢迎&nbsp;&nbsp;&nbsp;<span class="bg-warning">{{username}}</span>&nbsp;&nbsp;&nbsp;登录</a>
             </li>
         </ul>
-        <div class="container pt-5 d-flex">
-            <div class="mb-5 row m-2">
-                <label for="username" class="col-sm-3 col-form-label fs-5">姓名</label>
-                <div class="col-sm-9">
-                    <input type="text" class="form-control" id="username" placeholder="姓名">
+        <form>
+            <div class="container pt-5 d-flex">
+                <div class="mb-5 row m-2">
+                    <label for="username" class="col-sm-3 col-form-label fs-5">姓名</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="username" placeholder="姓名" v-model="searchUsername"
+                               @blur="search">
+                    </div>
+                </div>
+                <div class="mb-5 row m-2">
+                    <label for="telephone" class="col-sm-4 col-form-label fs-5">电话号码</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="telephone" placeholder="电话号码"
+                               v-model="searchTelephone"
+                               @blur="search">
+                    </div>
+                </div>
+                <div class="mb-5 row m-2">
+                    <div class="col-sm-12">
+                        <button type="button" class="btn btn-success" @click.prevent="search">搜索</button>
+                        <input type="button" class="btn btn-success" data-bs-toggle="modal"
+                               data-bs-target="#exampleModal"
+                               data-bs-whatever="@mdo" value="添加用户">
+                    </div>
                 </div>
             </div>
-            <div class="mb-5 row m-2">
-                <label for="telephone" class="col-sm-4 col-form-label fs-5">电话号码</label>
-                <div class="col-sm-8">
-                    <input type="text" class="form-control" id="telephone" placeholder="电话号码">
+        </form>
+    </div>
+
+    <div class="container pt-1">
+        <table class="table table-striped table-hover">
+            <tr class="table-primary">
+                <th class="table-success">ID</th>
+                <th class="table-success">姓名</th>
+                <th class="table-success">年龄</th>
+                <th class="table-success">薪资</th>
+                <th class="table-success">电话号码</th>
+                <th class="table-success">操作</th>
+            </tr>
+            <tr v-for="user,index in users" :key="index" class="table-secondary">
+                <td class="table-success">{{user.id}}</td>
+                <td class="table-success">{{user.username}}</td>
+                <td class="table-success">{{user.age}}</td>
+                <td class="table-success">{{user.salary}}</td>
+                <td class="table-success">{{user.telephone}}</td>
+                <td class="table-success">
+                    <input type="button" class="btn btn-danger" value="删除" @click="delUser(user.id)">
+                    <input type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                           data-bs-whatever="@mdo" value="修改" @click="getUserById(user.id)">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-4 fw-bold" id="exampleModalLabel">用户信息修改界面</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </div>
-            <div class="mb-5 row m-2">
-                <div class="col-sm-10">
-                    <input type="button" class="btn btn-success" value="搜索">
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="message-name" class="col-form-label">ID:</label>
+                            <input class="form-control" id="message-id" placeholder="ID" v-model="user.id" readonly/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-name" class="col-form-label">姓名:</label>
+                            <input class="form-control" id="message-name" placeholder="姓名" v-model="user.username"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-age" class="col-form-label">年龄:</label>
+                            <input class="form-control" id="message-age" placeholder="年龄" v-model="user.age"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-salary" class="col-form-label">薪资:</label>
+                            <input class="form-control" id="message-salary" placeholder="薪资" v-model="user.salary"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-telephone" class="col-form-label">电话号码:</label>
+                            <input class="form-control" id="message-telephone" placeholder="电话号码"
+                                   v-model="user.telephone"/>
+                        </div>
+                    </form>
                 </div>
-            </div>
-        </div>
-        <div class="container pt-1">
-            <table class="table table-striped table-hover">
-                <tr class="table-primary">
-                    <th class="table-success">ID</th>
-                    <th class="table-success">姓名</th>
-                    <th class="table-success">年龄</th>
-                    <th class="table-success">薪资</th>
-                    <th class="table-success">电话号码</th>
-                    <th class="table-success">操作</th>
-                </tr>
-                <tr v-for="user,index in users" :key="index" class="table-secondary">
-                    <td class="table-success">{{user.id}}</td>
-                    <td class="table-success">{{user.username}}</td>
-                    <td class="table-success">{{user.age}}</td>
-                    <td class="table-success">{{user.salary}}</td>
-                    <td class="table-success">{{user.telephone}}</td>
-                    <td class="table-success">
-                        <input type="button" class="btn btn-danger" value="删除">
-                        <input type="button" class="btn btn-primary" data-bs-toggle="modal"
-                               data-bs-target="#exampleModal" data-bs-whatever="@mdo" value="修改">
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title fs-4 fw-bold" id="exampleModalLabel">用户信息修改界面</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="message-name" class="col-form-label">姓名:</label>
-                                <input class="form-control" id="message-name" placeholder="姓名" v-model="user.username"/>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message-age" class="col-form-label">年龄:</label>
-                                <input class="form-control" id="message-age" placeholder="年龄" v-model="user.age"/>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message-salary" class="col-form-label">薪资:</label>
-                                <input class="form-control" id="message-salary" placeholder="薪资" v-model="user.salary"/>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message-telephone" class="col-form-label">电话号码:</label>
-                                <input class="form-control" id="message-telephone" placeholder="电话号码"
-                                       v-model="user.telephone"/>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="reset" class="btn btn-success" @click="clearForm">Reset</button>
-                        <button type="button" class="btn btn-primary" @click="insertUser">Send message</button>
-                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="reset" class="btn btn-success" @click="clearForm">Reset</button>
+                    <button type="button" class="btn btn-primary" @click="updateOrInsertUser">{{buttonName}}</button>
                 </div>
             </div>
         </div>
@@ -106,48 +119,133 @@
     const app = new Vue({
         el: "#app",
         data: {
-            users: [{
-                id: 1, username: "刘备", age: 100, salary: 10000, telephone: "15511551311"
-            }, {
-                id: 2, username: "关羽", age: 100, salary: 10000, telephone: "12345665432"
-            }, {
-                id: 3, username: "张飞", age: 100, salary: 10000, telephone: "15146489144"
-            },],
+            // users: [{
+            //     id: 1, username: "刘备", age: 100, salary: 10000, telephone: "15511551311"
+            // }, {
+            //     id: 2, username: "关羽", age: 100, salary: 10000, telephone: "12345665432"
+            // }, {
+            //     id: 3, username: "张飞", age: 100, salary: 10000, telephone: "15146489144"
+            // },],
 
             //数据赋值应该来源于后端服务接口，在页面加载完成之前赋值
             //表格迭代的多条用户记录
-            // users: [],
+            users: [],
             //表单提交的单条用户记录
             user: {},
+            username:"刘备",
+            buttonName: '提交',
+            searchUsername: '',
+            searchTelephone: '',
         },
         methods: {
             //查询所有用户
             findAll() {
                 //声明vue的当前对象_this
                 let _this = this;
-                axios.get('http:/localhost:8080/users/findAll')
+                axios.get('http://localhost:8080/users/findAll')
                     .then((res) => {
                         _this.users = res.data;
                     });
             },
-            //添加用户
-            insertUser() {
+            //添加用户  (写法一)
+            // updateOrInsertUser() {
+            //     let _this = this;
+            //     axios.post('http://localhost:8080/users/updateOrInsertUser', _this.user)
+            //         .then((res) => {
+            //             if (res.data.success) {
+            //                 //调用查询所有刷新数据
+            //                 _this.findAll();
+            //                 //清空表单填写的内容
+            //                 _this.clearForm();
+            //             } else {
+            //                 alert(res.data.message);
+            //             }
+            //         });
+            // },
+
+            //添加或修改用户（写法二）
+            updateOrInsertUser() {
                 let _this = this;
-                axios.post('http:/localhost;8080/users/insertUser', _this.user)
+                axios({
+                    method: "post",
+                    url: 'http://localhost:8080/users/updateOrInsertUser',
+                    data: _this.user,
+                    // contentType: "charset=UTF-8",
+                })
                     .then((res) => {
                         if (res.data.success) {
                             //调用查询所有刷新数据
                             _this.findAll();
                             //清空表单填写的内容
                             _this.clearForm();
+                            alert("用户操作成功");
                         } else {
                             alert(res.data.message);
                         }
                     });
             },
+            //清空表单
             clearForm() {
                 this.user = '';
-            }
+                this.buttonName = '提交';
+            },
+            //根据id查询单条用户信息
+            getUserById(id) {
+                let _this = this;
+                axios.get('http://localhost:8080/users/getUserById?id=' + id)
+                    .then((res) => {
+                        //取到的数据绑定到Vue的实例数据
+                        _this.user = res.data;
+                        _this.buttonName = "更新";
+                    })
+            },
+            //删除用户
+            delUser(id) {
+                let _this = this;
+                if (window.confirm("确定要删除id为" + id + "的用户吗？")) {
+                    axios.get('http://localhost:8080/users/delUser?id=' + id, {
+                        param: {
+                            id
+                        }
+                    })
+                        .then((res) => {
+                            if (res.data.success) {
+                                //更新页面数据
+                                _this.findAll();
+                            } else {
+                                alert(res.data.message);
+                            }
+                        })
+                }
+            },
+
+            //根据用户名和电话号码进行模糊查询
+            search() {
+                let _this = this;
+                axios.post('http://localhost:8080/users/findLike?username=' + this.searchUsername + '&telephone=' + this.searchTelephone, {
+                    // params: {
+                    //     username: _this.searchUsername,
+                    //     telephone: _this.searchTelephone,
+                    // }
+                }).then((res) => {
+                    _this.users = res.data;
+                });
+            },
+            //修改用户
+            // updateUser(){
+            //     let _this = this;
+            //     axios.post('http://localhost:8080/users/updateUser', _this.user)
+            //         .then((res) => {
+            //             if (res.data.success) {
+            //                 //调用查询所有刷新数据
+            //                 _this.findAll();
+            //                 //清空表单填写的内容
+            //                 _this.clearForm();
+            //             } else {
+            //                 alert(res.data.message);
+            //             }
+            //         });
+            // },
         },
         //创建完Vue实例的生命周期
         created() {

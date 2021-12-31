@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>个人网上银行主页面</title>
-    <!--    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}" />-->
+<!--        <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}" />-->
     <!--    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />-->
-    <!--    <script th:src="@{/js/bootstrap.js}"></script>-->
+<!--        <script th:src="@{/js/bootstrap.js}"></script>-->
     <!--    <script th:src="@{/js/bootstrap.min.js}"></script>-->
 </head>
 <style>
@@ -53,9 +53,9 @@
     <div class="logout"><a th:href="@{logout}"><h2>退出登录</h2></a></div>
     <div class="leftSide">
         <a th:href="@{/main?flag=balance}" target="show">查询余额</a><br/>
-        <a th:href="@{/main?flag=transfer}" target="show">转账</a><br/>
-        <a href="#">查询交易记录</a><br/>
-        <a href="#">修改密码</a>
+        <a th:href="@{/main?flag=transfer}">转账</a><br/>
+        <a th:href="@{/main?flag=transactionRecord}">查询交易记录</a><br/>
+        <a th:href="@{/main?flag=updatePassword}">修改密码</a>
     </div>
     <div class="rightSide">
         <iframe id="show" th:src="${url}" width="80%" height="300px"></iframe>

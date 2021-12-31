@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sisu-guice-2.1.7-noaop">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,17 @@
+#端口号默认就是8080，可写可不写
+server:
+  port: 8080
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/    #thymeleaf模板位置默认就是在resources/templates下
+    suffix: .html    #读取的文件后缀名
+    cache: false   #不缓存
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/ssm?serverTimezone=UTC&characterEncoding=utf8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:com/fan/mapper/*.xml
+  type-aliases-package: com.fan.entity

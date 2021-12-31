@@ -2,20 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>天气预报查询</title>
 </head>
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css"/>
+<script src="../static/js/bootstrap.js"></script>
 <body>
-<div id="app">
-
+<div id="app" class="container">
+    <input v-model="name" @keyup.delete="show" @keyup.enter="search" class="form-control-sm"> <input type="button" value="搜索" class="btn btn-danger" @click="search"><br/>
+    <span v-for="city,index in hotCitys" :key="index">
+        <a href="javascript:;" @click="searchCitys(city)">{{city}}</a>
+    </span>
+    <hr>
+    <span v-show="isShow">
+        {{name}}，今天的天气是：{{message}}
+    </span>
 </div>
 </body>
 <!--引入vue.js-->
 <script src="../static/js/vue.js"></script>
+<script src="../static/js/axios.min.js"></script>
 <script>
     const app = new Vue({
         el: "#app",
-        data: {},
-        methods: {},
+        data: {
+            name: '',
+            hotCitys: ['北京', '上海', '广东', '深圳', '杭州'],
+            message: '',
+            isShow:false,
+        },
+        methods: {
+            //搜索城市名称
+            search() {
+                let _this = this;
+                axios.get('http://localhost:8080/city/find?name=' + this.name)
+                    .then((res) => {
+                        _this.message = res.data.message;
+                        _this.isShow = true;
+                    });
+            },
+            show(){
+                this.isShow = false;
+            },
+            searchCitys(name){
+                //获取输入城市名称
+                this.name = name;
+                this.search();
+            }
+        },
     });
 </script>
 </html>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="4.12">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/junit/junit/4.12/junit-4.12-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/junit/junit/4.12/junit-4.12-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/junit/junit/4.12/junit-4.12.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

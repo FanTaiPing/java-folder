@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="1.10.8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/net/bytebuddy/byte-buddy/1.10.8/byte-buddy-1.10.8-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/net/bytebuddy/byte-buddy/1.10.8/byte-buddy-1.10.8-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/net/bytebuddy/byte-buddy/1.10.8/byte-buddy-1.10.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

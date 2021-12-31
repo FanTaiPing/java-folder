@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--通过bean标签管理组件对象
+    class：用来指定管理组件对象的全限定名 包.类
+    id: 用来指定spring框架创建的当前组件对象在spring（容器|工厂）中唯一标识 全局唯一
+    -->
+    <bean id="uDao" class="com.fan.dao.impl.UserDaoImpl">
+    </bean>
+    <bean id="userService" class="com.fan.service.impl.UserServiceImpl">
+        <!--SET<设置成类的属性，必须提供setter方法>注入userDao-->
+        <!--name:用来指定给组件中哪个属性名进行赋值-->
+        <!--ref 注入对象类型，用来指定赋值对象在工厂中唯一标识  value注入基本数据类型-->
+        <property name="userDao" ref="uDao"/>
+        <property name="name" value="第三方师傅"/>
+        <property name="age" value="20"/>
+        <!--日期格式默认为：yyyy/MM/dd-->
+        <property name="bir" value="2021/12/01"/>
+        <property name="money" value="10000.00"/>
+
+        <!--注入数组类型-->
+        <property name="items">
+            <array>
+                <value>大大</value>
+                <value>懂法守法</value>
+                <value>地方三房</value>
+            </array>
+        </property>
+
+        <!--注入集合-->
+        <property name="list">
+            <list>
+                <value>更好发挥</value>
+                <value>狗狗</value>
+                <value>发过的</value>
+            </list>
+        </property>
+
+        <!--构造注入-->
+        <constructor-arg index="0" name="id" value="5"/>
+
+        <constructor-arg index="1" name="arr">
+            <array>
+                <value>法国大使馆</value>
+                <value>地方更换</value>
+                <value>大地方撒ad</value>
+            </array>
+        </constructor-arg>
+    </bean>
+</beans>

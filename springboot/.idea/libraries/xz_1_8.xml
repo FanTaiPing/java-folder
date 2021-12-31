@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xz-1.8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/tukaani/xz/1.8/xz-1.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

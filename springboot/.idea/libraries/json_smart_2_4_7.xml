@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="json-smart-2.4.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

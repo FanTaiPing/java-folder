@@ -8,6 +8,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
+import java.util.List;
+
 @Service
 @Transactional(rollbackFor = Exception.class,propagation = Propagation.NESTED)
 public class RecordServiceImpl implements RecordService {
@@ -16,5 +19,15 @@ public class RecordServiceImpl implements RecordService {
     @Override
     public int insertRecord(Record record) {
         return recordDao.insertRecord(record);
+    }
+
+    @Override
+    public List<Record> findAllRecord() {
+        return recordDao.findAllRecord();
+    }
+
+    @Override
+    public List<Record> findRecord(Date dateOne, Date dateTwo) {
+        return recordDao.findRecord(dateOne,dateTwo);
     }
 }

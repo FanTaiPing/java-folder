@@ -11,6 +11,14 @@
 <script th:src="@{/js/bootstrap.js}"></script>
 <!--    <script th:src="@{/js/bootstrap.min.js}"></script>-->
 <body>
+<div class="container-fluid"
+     style="background: deeppink !important;font-size: 42px;line-height: 100px;color: white;font-weight: 900;">
+    <div class="container justify-content-sm-start flex-wrap" style="display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图书管理系统</div>
+    <div class="justify-content-end" style="display: inline-block;font-size: 28px;">欢迎【<span
+            th:text="${session.user}"></span>】登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div style="display: inline-block;color: blue;font-size: 26px;"><a th:href="@{/user/logout}">登出</a></div>
+</div>
 <div class="container main_color">
     <div class="justify-content-center d-flex main_title">图书系统管理员欢迎您！</div>
     <div class="justify-content-center d-flex">
@@ -34,18 +42,40 @@
                 <td class="table-danger" th:text="${book.name}"></td>
                 <td class="table-danger" th:text="${book.author}"></td>
                 <td class="table-danger" th:text="${book.publish}"></td>
-                <td class="table-danger" th:text="${#dates.format(book.publish_date,'yyyy/MM/dd HH:mm:ss')}"></td>
+                <td class="table-danger" th:text="${#dates.format(book.publishDate,'yyyy/MM/dd')}"></td>
                 <td class="table-danger" th:text="${book.page}"></td>
                 <td class="table-danger" th:text="${book.price}"></td>
                 <td class="table-danger" th:text="${book.content}"></td>
                 <td class="table-danger">
                     <a th:href="@{/book/updateBook(id=${book.id})}">修改</a>
-                    <a href="#" onclick="deleteBook();">删除</a>
+                    <a href="javascript:(0)" th:onclick="|javascript:deleteBook(${book.id})|">删除</a>
                 </td>
             </tr>
             <tr class="table-danger add_button">
-                <td colspan="8">
+                <td colspan="3">
                     <input type="button" class="add" value="新增图书" onclick="addBook();">
+                </td>
+                <td colspan="6" class="align-items-center justify-content-center">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item active">
+                                <a class="page-link"
+                                   th:href="@{/book/findAllBook(currentPage=1)}">首页</a>
+                            </li>
+                            <li class="page-item active" th:if="${bookIPage.getCurrent()>0}"><a class="page-link" th:href="@{/book/findAllBook(currentPage=${bookIPage.getCurrent()-1})}">上一页</a>
+                            </li>
+<!--                            <li class="page-item" th:if="${bookIPage.getCurrent()<=3}" th:each="${i:${book}}"><a class="page-link" th:href="@{/book/findAllBook(currentPage=${bookIPage.getCurrent()})}">1</a></li>-->
+<!--                            <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+<!--                            <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<!--                            <li class="page-item"><a class="page-link" href="#">4</a></li>-->
+<!--                            <li class="page-item"><a class="page-link" href="#">5</a></li>-->
+                            <li class="page-item active" th:if="${bookIPage.getCurrent()} < ${bookIPage.getPages()}"><a class="page-link" th:href="@{/book/findAllBook(currentPage=${bookIPage.getCurrent()+1})}">下一页</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link"
+                                                            th:href="@{/book/findAllBook(currentPage=${bookIPage.getPages()})}">末页</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </td>
             </tr>
         </table>
@@ -54,12 +84,16 @@
 
 <script>
     let url = '[[@{/}]]';
-    function addBook(){
-        window.location.href=url + "book/addBook";
+
+    function addBook() {
+        window.location.href = url + "book/addBook";
     }
 
-    function deleteBook(){
-        window.location.href=url+"book/deleteBook";
+    function deleteBook(id) {
+        if (confirm("确定要删除id为" + id + "的图书吗？")) {
+            window.location.href = url + "book/deleteBook?id=" + id;
+        }
+
     }
 </script>
 </body>

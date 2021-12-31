@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="json-path-2.5.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/com/jayway/jsonpath/json-path/2.5.0/json-path-2.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

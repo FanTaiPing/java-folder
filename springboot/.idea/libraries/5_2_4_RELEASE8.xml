@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="5.2.4.RELEASE8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/springframework/spring-aop/5.2.4.RELEASE/spring-aop-5.2.4.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/springframework/spring-aop/5.2.4.RELEASE/spring-aop-5.2.4.RELEASE-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/springframework/spring-aop/5.2.4.RELEASE/spring-aop-5.2.4.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="userDao" class="com.fan.dao.impl.UserDaoImpl"/>
+    <!--配置切面-->
+    <!--注册前置通知-->
+    <bean id="myBeforeAdvice" class="com.fan.utils.MyBeforeAdvice"/>
+    <!--组装切面-->
+    <aop:config>
+        <!--配置切入点表达式pointcut
+        id:切入点在工厂的唯一标识
+        expression:用来指定切入项目中那些组件中的方法 execution（返回值 包名.类名.方法名（..））
+        .*  代表实现类下面的所有方法
+        -->
+        <aop:pointcut id="userAll" expression="execution(* com.fan.dao.impl.UserDaoImpl.*(..))"/>
+        <!--配置切面-->
+        <aop:advisor advice-ref="myBeforeAdvice" pointcut-ref="userAll"/>
+    </aop:config>
+</beans>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="maven-toolchain-2.2.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -11,6 +11,12 @@
 <script th:src="@{/js/bootstrap.js}"></script>
 <!--    <script th:src="@{/js/bootstrap.min.js}"></script>-->
 <body>
+<div class="container-fluid"
+     style="background: deeppink !important;font-size: 42px;line-height: 100px;color: white;font-weight: 900;">
+    <div class="container justify-content-sm-start flex-wrap" style="display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图书管理系统</div>
+    <div class="justify-content-end" style="display: inline-block;font-size: 28px;">欢迎【<span th:text="${session.user}"></span>】登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div style="display: inline-block;color: blue;font-size: 26px;">登出</div>
+</div>
 <div class="container main_color">
     <div class="justify-content-center d-flex">
         <form th:action="@{/book/updateBook}" method="post">
@@ -40,7 +46,7 @@
                 </tr>
                 <tr class="table-primary">
                     <td class="table-primary">出版日期<span class="span_span">(*)</span></td>
-                    <td><input type="text" name="publish_date" th:value="${#dates.format(book.publish_date,'yyyy/MM/dd')}" readonly/></td>
+                    <td><input type="date" name="publishDate" th:value="${#dates.format(book.publishDate,'yyyy-MM-dd')}"/></td>
                     <td>(yyyy/MM/dd)</td>
                 </tr>
                 <tr class="table-primary">

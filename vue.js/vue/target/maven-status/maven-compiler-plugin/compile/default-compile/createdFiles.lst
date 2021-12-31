@@ -1,0 +1,7 @@
+com\fan\controller\UserController.class
+com\fan\VueApplication.class
+com\fan\dao\UserDao.class
+com\fan\controller\IndexController.class
+com\fan\service\impl\UserServiceImpl.class
+com\fan\service\UserService.class
+com\fan\entity\Users.class

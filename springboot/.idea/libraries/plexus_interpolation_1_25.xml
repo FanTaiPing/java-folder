@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="plexus-interpolation-1.25">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/codehaus/plexus/plexus-interpolation/1.25/plexus-interpolation-1.25.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

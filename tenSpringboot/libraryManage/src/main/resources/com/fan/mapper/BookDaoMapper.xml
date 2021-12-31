@@ -28,7 +28,7 @@ namespace:当前mapper文件管理的是那个DAO接口(包，接口名)
 
     <insert id="addBook" parameterType="Book" useGeneratedKeys="true" keyProperty="id">
         insert into `book`(Name, Author, publish, publish_date, page, price, content)
-        values (#{name}, #{author}, #{publish}, #{publish_date}, #{page}, #{price}, #{content})
+        values (#{name}, #{author}, #{publish}, #{publishDate}, #{page}, #{price}, #{content})
     </insert>
 
     <select id="getBookById" parameterType="int" resultType="Book">
@@ -47,40 +47,34 @@ namespace:当前mapper文件管理的是那个DAO接口(包，接口名)
     <update id="updateBook" parameterType="Book">
         update `book`
         <set>
-            <if test="Name != null and '' != Name">
+            <if test="name != null and '' != name">
                 `Name` = #{name},
             </if>
-        </set>
-        <set>
-            <if test="Author != null and '' != Author">
+            <if test="author != null and '' != author">
                 Author =#{author},
             </if>
-        </set>
-        <set>
             <if test="publish != null and '' != publish">
                 publish =#{publish},
             </if>
-        </set>
-        <set>
-            <if test="publish_date != null and '' != publish_date">
-                publish_date =#{publish_date},
+            <if test="publishDate != null">
+                publish_date =#{publishDate},
             </if>
-        </set>
-        <set>
             <if test="page != null">
                 page =#{page},
             </if>
-        </set>
-        <set>
             <if test="price != null">
                 price =#{price},
             </if>
-        </set>
-        <set>
             <if test="content != null and '' != content">
                 content =#{content},
             </if>
         </set>
         where id =#{id}
     </update>
+
+    <delete id="deleteBook" parameterType="int">
+        delete
+        from book
+        where id = #{id}
+    </delete>
 </mapper>

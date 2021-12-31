@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="logback-classic-1.2.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/ch/qos/logback/logback-classic/1.2.7/logback-classic-1.2.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

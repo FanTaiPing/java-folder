@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="httpclient-4.0.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/org/apache/httpcomponents/httpclient/4.0.2/httpclient-4.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

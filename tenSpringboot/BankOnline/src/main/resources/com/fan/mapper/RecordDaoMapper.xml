@@ -15,9 +15,32 @@ namespace:当前mapper文件管理的是那个DAO接口(包，接口名)
       -->
     <!--  注意：查询所有结果多个 resultType 还是使用要封装的实体类的全限定名(包，类)  -->
     <!--  useGeneratedKeys="true" keyProperty="id" 代表使用mysql的自增<只有使用mysql数据库生效> -->
-    <insert id="insertRecord" parameterType="com.fan.entity.Record" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insertRecord" parameterType="Record" useGeneratedKeys="true" keyProperty="id">
         insert into `transaction_record`(cardno, transaction_date, expense, income, `balance`, transaction_type)
-        values (#{cardNo}, #{transaction_date}, #{expense}, #{income}, #{balance}, #{transaction_type});
+        values (#{cardNo}, #{transactionDate}, #{expense}, #{income}, #{balance}, #{transactionType});
     </insert>
 
+    <select id="findAllRecord" resultType="Record">
+        select id,
+               cardno,
+               transaction_date,
+               expense,
+               income,
+               balance,
+               transaction_type,
+               remark
+        from transaction_record
+    </select>
+
+    <select id="findRecord" resultType="Record">
+        select id,
+               cardno,
+               transaction_date,
+               expense,
+               income,
+               balance,
+               transaction_type,
+               remark
+        from transaction_record where transaction_date between #{dateOne} and #{dateTwo}
+    </select>
 </mapper>

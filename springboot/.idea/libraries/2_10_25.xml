@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="2.10.25">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/com/fasterxml/jackson/module/jackson-module-parameter-names/2.10.2/jackson-module-parameter-names-2.10.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/com/fasterxml/jackson/module/jackson-module-parameter-names/2.10.2/jackson-module-parameter-names-2.10.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mvnRespotity/com/fasterxml/jackson/module/jackson-module-parameter-names/2.10.2/jackson-module-parameter-names-2.10.2-javadoc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
