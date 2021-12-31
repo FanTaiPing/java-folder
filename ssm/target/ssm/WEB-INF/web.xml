@@ -1,0 +1,101 @@
+<!--<!DOCTYPE web-app PUBLIC-->
+<!--        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"-->
+<!--        "http://java.sun.com/dtd/web-app_2_3.dtd" >-->
+<!--<web-app xmlns="http://java.sun.com/xml/ns/javaee"-->
+<!--         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee-->
+<!--		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"-->
+<!--         version="2.5">-->
+
+<!--    <display-name>ssm</display-name>-->
+
+<!--    &lt;!&ndash;配置工厂配置文件&ndash;&gt;-->
+<!--    <context-param>-->
+<!--        <param-name>contextConfigLocation</param-name>-->
+<!--        <param-value>classpath:spring-mybatis.xml</param-value>-->
+<!--    </context-param>-->
+
+<!--    &lt;!&ndash;配置Filter字符集编码&ndash;&gt;-->
+<!--    <filter>-->
+<!--        <filter-name>charset</filter-name>-->
+<!--        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>-->
+<!--        <init-param>-->
+<!--            <param-name>encoding</param-name>-->
+<!--            <param-value>UTF-8</param-value>-->
+<!--        </init-param>-->
+<!--    </filter>-->
+<!--    <filter-mapping>-->
+<!--        <filter-name>charset</filter-name>-->
+<!--        <url-pattern>/*</url-pattern>-->
+<!--    </filter-mapping>-->
+
+<!--    &lt;!&ndash;配置工厂监听器&ndash;&gt;-->
+<!--    <listener>-->
+<!--        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>-->
+<!--    </listener>-->
+
+<!--    &lt;!&ndash;配置springmvc核心servlet&ndash;&gt;-->
+<!--    <servlet>-->
+<!--        <servlet-name>sprintMVC</servlet-name>-->
+<!--        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>-->
+<!--        <init-param>-->
+<!--            <param-name>contextConfigLocation</param-name>-->
+<!--            <param-value>classpath:spring-mybatis.xml</param-value>-->
+<!--        </init-param>-->
+<!--    </servlet>-->
+
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>sprintMVC</servlet-name>-->
+<!--&lt;!&ndash;放行所有&ndash;&gt;-->
+<!--        <url-pattern>/</url-pattern>-->
+<!--    </servlet-mapping>-->
+<!--</web-app>-->
+
+
+
+
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>ssm</display-name>
+    <!--配置工厂配置文件-->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:spring-mybatis.xml</param-value>
+    </context-param>
+    <!--配置Filter字符集编码-->
+    <filter>
+        <filter-name>charset</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>charset</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!--配置工厂监听器-->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <!--配置springmvc核心servlet-->
+    <servlet>
+        <servlet-name>springmvc</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:springmvc.xml</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>springmvc</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+</web-app>
