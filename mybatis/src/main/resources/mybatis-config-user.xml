@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"></setting>
+    </settings>
+    <environments default="development">
+        <!--配置连接相关的参数-->
+        <environment id="development">
+            <!--事务管路 type：指定事务管理的方式 JDBC-->
+            <transactionManager type="JDBC"/>
+            <!--数据源 连接相关 type：是不是用连接池形式 POOLED(使用连接池) UNPOOL(不用连接池)-->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url"
+                          value="jdbc:mysql://localhost:3306/t_emp?serverTimezone=UTC&amp;characterEncoding=utf8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+                <!--        <property name="driver" value=""/>
+        <property name="url" value=""/>
+        <property name="username" value=""/>
+        <property name="password" value=""/>-->
+            </dataSource>
+        </environment>
+    </environments>
+    <!--注册mapper配置文件 映射管理dao接口的配置文件-->
+    <mappers>
+        <mapper resource="com/fan/mapper/UserDaoMapper.xml"/>
+    </mappers>
+</configuration>

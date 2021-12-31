@@ -1,0 +1,4 @@
+[DEBUG][21-12-03][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-12-03][TestUser]进入了log4j的test中
+[DEBUG][21-12-03][TestUser]debug:进入了testLog4j
+[ERROR][21-12-03][TestUser]error:进入了testLog4j

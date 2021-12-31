@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!--标准的日志工厂实现-->
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+    <typeAliases>
+        <typeAlias type="com.fan.entity.Student" alias="student"/>
+        <typeAlias type="com.fan.entity.Teacher" alias="teacher"/>
+    </typeAliases>
+    <environments default="development">
+
+        <environment id="development">
+
+            <transactionManager type="JDBC"/>
+
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis?serverTimezone=UTC"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--注册mapper配置文件-->
+    <mappers>
+        <mapper resource="com/fan/mapper/*.xml"/>
+<!--        <mapper class="com.fan.dao.TeacherMapper"/>-->
+<!--        <mapper class="com.fan.dao.StudentMapper"/>-->
+    </mappers>
+</configuration>
