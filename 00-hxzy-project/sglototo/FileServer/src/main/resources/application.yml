@@ -1,0 +1,52 @@
+server:
+  port: 7079
+  servlet:
+    context-path: /FILE
+
+
+logging:
+  level:
+    org.springframework.web: ERROR
+  file: /usr/local/filelog/log.txt
+
+
+
+
+windows_logging:
+  file: d:/log/file_logs.txt
+windows_server:
+  filepath: d:/fileServer/
+
+linux_logging:
+  file: /mnt/data/files_log/
+linux_server:
+  filepath: /mnt/data/files/
+
+
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 512MB
+      max-request-size: 1024MB
+  application:
+    name: FILE
+
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf-8&useSSL=false
+#    username: root
+#    password: ttd4x76
+#    driver-class-name: com.mysql.jdbc.Driver
+#  jpa:
+#    properties:
+#      hibernate:
+#        hbm2ddl:
+#          auto: create-drop
+#    show-sql: false
+#
+#logging:
+#  level:
+#    org.boot.uploader.*: debug
+
+prop:
+  upload-folder: ./files

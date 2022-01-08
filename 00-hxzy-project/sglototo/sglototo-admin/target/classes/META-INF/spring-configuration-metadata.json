@@ -1,0 +1,205 @@
+{
+  "groups": [
+    {
+      "name": "oss.aliyun.defalut",
+      "type": "com.km.sglototo.vo.OssAliyunField",
+      "sourceType": "com.km.sglototo.component.OssAliyunConfig",
+      "sourceMethod": "defaultOssAliyunField()"
+    },
+    {
+      "name": "oss.aliyun.first",
+      "type": "com.km.sglototo.vo.OssAliyunField",
+      "sourceType": "com.km.sglototo.component.OssAliyunConfig",
+      "sourceMethod": "firstOssAliyuField()"
+    },
+    {
+      "name": "oss.aliyun.second",
+      "type": "com.km.sglototo.vo.OssAliyunField",
+      "sourceType": "com.km.sglototo.component.OssAliyunConfig",
+      "sourceMethod": "secondOssAliyuField()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "oss.aliyun.defalut.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.defalut.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.defalut.access-key-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.defalut.access-key-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.defalut.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.defalut.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.defalut.end-point",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.defalut.end-point",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.defalut.prefix",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.defalut.prefix",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.defalut.style-name",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.defalut.style-name",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.first.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.first.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.first.access-key-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.first.access-key-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.first.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.first.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.first.end-point",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.first.end-point",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.first.prefix",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.first.prefix",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.first.style-name",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.first.style-name",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.second.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.second.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.second.access-key-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.second.access-key-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.second.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.second.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.second.end-point",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.second.end-point",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.second.prefix",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.second.prefix",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.second.style-name",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    },
+    {
+      "name": "oss.aliyun.second.style-name",
+      "type": "java.lang.String",
+      "sourceType": "com.km.sglototo.vo.OssAliyunField"
+    }
+  ],
+  "hints": []
+}
