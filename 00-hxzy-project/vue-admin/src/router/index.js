@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 
 import Home from '@/views/home/index'
 // import "ant-design-vue/dist/antd.css"
+// import updateProduct from '@/views/products/product/updateProduct'
 
 
 Vue.use(Router)
@@ -227,7 +228,44 @@ export const constantRouterMap = [
         // hidden: true
       },
     ]
+  },
 
+  {
+    path: '/products',
+    component: Layout,
+    // redirect: '/product',
+    name: 'products',
+    meta: { title: '商品信息', icon: 'products' },
+    children: [
+      {
+        path: 'product',
+        name: 'product',
+        component: () => import('@/views/products/product/index'),
+        meta: { title: '商品信息列表', icon: 'product-list' }
+      },
+      {
+        path: 'addProduct',
+        name: 'addProduct',
+        component: () => import('@/views/products/product/addProduct'),
+        meta: { title: '添加商品信息' },
+        // hidden: true
+      },
+      //修改商品信息
+      {
+        path: 'updateProduct',
+        name: 'updateProduct',
+        component: () => import('@/views/products/product/updateProduct'),
+        meta: { title: '修改商品信息' },
+        // hidden: true
+      },
+      // {
+      //   path: 'updateProduct',
+      //   name: 'updateProduct',
+      //   component: updateProduct,
+      //   meta: { title: '修改商品信息' },
+
+      // }
+    ]
   },
   // {
   //   path: '/app',
@@ -255,7 +293,7 @@ export const constantRouterMap = [
 ]
 
 
-
+/*商品信息模块 */
 export const asyncRouterMap = [
   {
     path: '/pms',
@@ -264,6 +302,31 @@ export const asyncRouterMap = [
     name: 'pms',
     meta: { title: '商品', icon: 'product' },
   },
+
+  // {
+  //   path: '/products',
+  //   component: Layout,
+  //   // redirect: '/product',
+  //   name: 'products',
+  //   meta: { title: '商品信息', icon: 'products' },
+  //   children: [
+  //     {
+  //       path: 'product',
+  //       name: 'product',
+  //       component: () => import('@/views/products/product/index'),
+  //       meta: { title: 'table', icon: 'product-list' }
+  //     },
+  //     // {
+  //     //   path: 'addProduct',
+  //     //   name: 'addProduct',
+  //     //   component: () => import('@/views/products/product/addProduct'),
+  //     //   meta: { title: '添加商品信息' },
+  //     //   // hidden: true
+  //     // },
+  //   ]
+  // },
+
+
 
   { path: '*', redirect: '/404', hidden: true }
 ]

@@ -214,8 +214,8 @@ public class FileUtil extends cn.hutool.core.io.FileUtil {
     public static void checkSize(long maxSize, long size) {
         if (size > (maxSize * 1024 * 1024)) {
             throw new TaskException("文件超出规定大小");
-        }
     }
+}
 
     /**
      * 判断两个文件是否相同

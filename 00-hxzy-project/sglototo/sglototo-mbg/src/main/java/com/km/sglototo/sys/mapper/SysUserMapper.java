@@ -3,8 +3,6 @@ package com.km.sglototo.sys.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.km.sglototo.sys.entity.SysUser;
 import com.km.sglototo.sys.entity.SysUserVo;
-import com.km.sglototo.sys.entity.SysUser;
-import com.km.sglototo.sys.entity.SysUserVo;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

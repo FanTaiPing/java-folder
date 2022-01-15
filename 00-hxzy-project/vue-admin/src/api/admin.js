@@ -85,6 +85,7 @@ export function updatePassword(data) {
     data:data
   })
 }
+//
 export function updateAdmin(id,data) {
   return request({
     url:'/sys/sysUser/update/'+id,

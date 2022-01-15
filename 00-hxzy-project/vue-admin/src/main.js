@@ -1,3 +1,4 @@
+//导入vue 这个包，得到vue构造函数
 import Vue from 'vue'
 
 import 'normalize.css/normalize.css'// A modern alternative to CSS resets
@@ -24,6 +25,7 @@ Vue.use(VCharts)
 
 Vue.config.productionTip = false
 
+//创建vue的实例对象
 new Vue({
   el: '#app',
   router,

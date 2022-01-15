@@ -19,7 +19,7 @@ import java.util.List;
  */
 @Data
 @TableName("sys_area")
-public class SysArea extends BaseEntity implements Serializable {
+public class SysArea  implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

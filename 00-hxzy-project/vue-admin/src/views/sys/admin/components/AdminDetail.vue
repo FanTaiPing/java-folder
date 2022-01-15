@@ -42,6 +42,7 @@
   export default {
     name: 'AdminDetail',
     components:{SingleUpload},
+    //自定义属性
     props: {
       isEdit: {
         type: Boolean,
@@ -128,7 +129,7 @@
         }
       }
     },
-    methods: {
+    methods: { 
 
       onSubmit(formName) {
         this.$refs[formName].validate((valid) => {
