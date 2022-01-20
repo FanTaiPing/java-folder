@@ -23,7 +23,9 @@
         </el-date-picker>-->
         </el-form-item>
       </el-form>
+    
     </el-col>
+
     <!--列表-->
     <el-table :data="psersonsList" highlight-current-row v-loading="loading" element-loading-text="拼命加载中" style="width: 100%;">
 
@@ -62,7 +64,7 @@
         </template>
       </el-table-column>
 
-      <el-table-column   fixed="right" label="操作" width="100">
+      <el-table-column fixed="right" label="操作" width="100">
         <template slot-scope="scope">
           <el-button @click="goEdit(scope.row)" type="text" size="small">处理</el-button>
         </template>
@@ -132,193 +134,199 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import axios from 'axios'
- export default {
-   data() {
-     return {
+import axios from "axios";
+export default {
+  data() {
+    return {
       goods: [],
-      psersonsList:[],
-      userData:[],
+      psersonsList: [],
+      userData: [],
       loading: false,
       total: 0,
-      value1:'',
+      value1: "",
       editFormVisible: false,
       filter: {
-        pageSize:2, // 页大小
+        pageSize: 2, // 页大小
         currentPage: 1, // 当前页
       },
       editForm: {
         id: 0,
-        name: '',
-        mobile: '',
-        tzyx: '',
+        name: "",
+        mobile: "",
+        tzyx: "",
         save_datetime: null,
         slzt: 0,
         clyj: "",
         modify_datetime: null,
       },
-       paramQuery: {
-          cdkey: null,
-       }
-     }
-   },
-    created() {
-        this.getuserData(data =>{
-          this.goods = data
-          this.getuser(data)
-        })
+      paramQuery: {
+        cdkey: null,
+      },
+    };
+  },
+  created() {
+    this.getuserData((data) => {
+      this.goods = data;
+      this.getuser(data);
+    });
+  },
+  methods: {
+    //性别显示转换
+    formatSex: function (row, column) {
+      return row.number == 1 ? "男" : row.number == 0 ? "女" : "女";
     },
-    methods: {
-      //性别显示转换
-      formatSex: function (row, column) {
-        return row.number == 1 ? '男' : row.number == 0 ? '女' : '女';
-      },
-      close() {
-        this.editFormVisible = false;
-      },
-      goEdit(row){
-          this.editFormVisible=true
-        this.editForm = row;
-      },
-      //显示编辑界面
-      handleEdit: function (index, row) {
-        this.editFormVisible = true;
-        this.editForm = Object.assign({}, row);//合并对象操作
-      },
+    close() {
+      this.editFormVisible = false;
+      
+    },
+    //点击处理操作之后根据点击的行将对应的信息显示到编辑表单里面
+    goEdit(row) {
+      this.editFormVisible = true;
+      this.editForm = row;
+    },
+    //显示编辑界面
+    handleEdit: function (index, row) {
+      this.editFormVisible = true;
+      this.editForm = Object.assign({}, row); //合并对象操作
+    },
 
-
-      handleDelete(index, row) {
-        this.$confirm('确认删除吗?', '提示' , {
-          type: 'warning'
-        }).then(() => {
-          this.loading = true;
-            setTimeout(() => {
-              this.$message({
-                message: '删除成功',
-                type: 'success'
-              });
-              this.userData.splice(index, 1);
-              this.loading = false;
-            }, 2000);
-            this.getuserData();
-        })
-        console.log(index, row);
-      },
-      handleSizeChange(val) {
-        console.log(`每页 ${val} 条`);
-      },
-      handleCurrentChange(val) {
-        let datalist = this.goods
-        this.filter.currentPage = val;
-        this.getuser(datalist)
-        console.log(`当前页: ${val}`);
-      },
-      Submit() {
-        this.$refs.editForm.validate((valid) =>{
-          if (valid) {
-            this.$confirm('确认提交吗？', '提示', {}).then(() => {
-              this.$http.post('api/person/save',this.editForm).then((response) => {
+    handleDelete(index, row) {
+      this.$confirm("确认删除吗?", "提示", {
+        type: "warning",
+      }).then(() => {
+        this.loading = true;
+        setTimeout(() => {
+          this.$message({
+            message: "删除成功",
+            type: "success",
+          });
+          this.userData.splice(index, 1);
+          this.loading = false;
+        }, 2000);
+        this.getuserData();
+      });
+      console.log(index, row);
+    },
+    handleSizeChange(val) {
+      console.log(`每页 ${val} 条`);
+    },
+    handleCurrentChange(val) {
+      let datalist = this.goods;
+      this.filter.currentPage = val;
+      this.getuser(datalist);
+      console.log(`当前页: ${val}`);
+    },
+    Submit() {
+      this.$refs.editForm.validate((valid) => {
+        if (valid) {
+          this.$confirm("确认提交吗？", "提示", {}).then(() => {
+            this.$http
+              .post("api/person/save", this.editForm)
+              .then((response) => {
                 const state = response.data;
                 setTimeout(() => {
-                  if(state === 1){
+                  if (state === 1) {
                     this.$message({
-                      message: '处理成功',
-                      type: 'success'
+                      message: "处理成功",
+                      type: "success",
                     });
                     this.loading = false;
-                  }else {
+                  } else {
                     this.$message({
-                      message: '处理失败',
-                      type: 'faile'
+                      message: "处理失败",
+                      type: "faile",
                     });
                     this.loading = false;
                   }
                 }, 200);
                 this.editFormVisible = false;
                 this.getuserData();
-              }).catch(function (error) {
+              })
+              .catch(function (error) {
                 console.log(error);
               });
-
-
-            })
-          }
-        });
-      },
-
-      query(){
-        this.loading = true 
-        if(this.paramQuery.name==null||this.paramQuery.name==""){
-          this.paramQuery.name=""
-        }
-        this.$http.get('api/person/findAllMap?name='+this.paramQuery.name).then((response) => {
-            this.psersonsList = response.data.page;
-            console.log(this.psersonsList);
-            setTimeout(() => {
-              this.loading = false;
-            }, 200);
-
-        }).catch(function (error) {
-            console.log(error);
           });
-      },
-
-      getuserData(callback){
-        this.loading = true
-        this.$http.get('/api/person/findAllMap').then((response) => {
-          if(typeof callback === "function"){
-            this.psersonsList = response.data.page;
-            console.log(this.psersonsList);
-            setTimeout(() => {
-              this.loading = false;
-            }, 200);
-            callback(this.psersonsList)
-          }
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-      },
-      getuser(data) {
-        let pageSize = this.filter.pageSize
-        console.log(pageSize)
-        this.total=this.psersonsList.length
-        let total = this.total
-        let curNo = (this.filter.currentPage - 1) * pageSize
-        let num = total % pageSize
-        console.log(curNo + '页');
-        let userDatalist = []
-        for(let i = 0; i < pageSize; i++) {
-            userDatalist.push(data[curNo + i])
         }
-        this.userData = userDatalist;
-        console.log(userDatalist)
-      }
+      });
     },
- }
+
+    query() {
+      this.loading = true;
+      if (this.paramQuery.name == null || this.paramQuery.name == "") {
+        this.paramQuery.name = "";
+      }
+      this.$http
+        .get("api/person/findAllMap?name=" + this.paramQuery.name)
+        .then((response) => {
+          this.psersonsList = response.data.page;
+          console.log(this.psersonsList);
+          setTimeout(() => {
+            this.loading = false;
+          }, 200);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    },
+
+    getuserData(callback) {
+      this.loading = true;
+      this.$http
+        .get("/api/person/findAllMap")
+        .then((response) => {
+          if (typeof callback === "function") {
+            this.psersonsList = response.data.page;
+            console.log(this.psersonsList);
+            setTimeout(() => {
+              this.loading = false;
+            }, 200);
+            callback(this.psersonsList);
+          }
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    },
+    getuser(data) {
+      let pageSize = this.filter.pageSize;
+      console.log(pageSize);
+      this.total = this.psersonsList.length;
+      let total = this.total;
+      let curNo = (this.filter.currentPage - 1) * pageSize;
+      let num = total % pageSize;
+      console.log(curNo + "页");
+      let userDatalist = [];
+      for (let i = 0; i < pageSize; i++) {
+        userDatalist.push(data[curNo + i]);
+      }
+      this.userData = userDatalist;
+      console.log(userDatalist);
+    },
+  },
+};
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
-.title1{
+.title1 {
   font-size: 12px;
 }
-
-
 
 .demo-table-expand {
   font-size: 0;
 }
+
 .demo-table-expand label {
   width: 90px;
   color: #99a9bf;
 }
+
 .demo-table-expand .el-form-item {
   margin-right: 0;
   margin-bottom: 0;
   width: 50%;
 }
 
-el-form-item__label{
+el-form-item__label {
   font-size: 20px;
-  font-family:Arial,Helvetica,sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 </style>

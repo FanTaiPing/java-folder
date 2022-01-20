@@ -1,6 +1,5 @@
 package com.louis.springboot.demo.controller;
-import com.louis.springboot.demo.model.CraPerson;
-import com.louis.springboot.demo.util.DateUtil;
+import com.louis.springboot.demo.model.SysUser;
 import com.louis.springboot.demo.util.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -86,4 +85,14 @@ public class SysUserController {
 //
 //        return msg.toString();
 //    }
+
+    /**
+     * 添加sysUser用户
+     * @param sysUser
+     * @return
+     */
+    @PostMapping("insertSysUser")
+    public Object insert(@RequestBody SysUser sysUser) {
+        return sysUserService.insert(sysUser);
+    }
 }

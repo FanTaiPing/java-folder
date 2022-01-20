@@ -15,7 +15,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 /**
  * 商品信息控制器
@@ -37,18 +36,20 @@ public class ProductController extends ApiController {
      * @param pageSize           每页显示的信息
      * @return
      */
-    @GetMapping(value = "/productList/{searchName}")
+    @GetMapping(value = "/productList")
     @SysLog(MODULE = "products", REMARK = "根据条件查询所有用户列表")
     @ApiOperation("根据条件查询所有用户列表")
+    @CrossOrigin
     public Object findAllProduct(PmsProductCategory pmsProductCategory,
                                  @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
                                  @RequestParam(value = "pageSize", defaultValue = "5") Integer pageSize,
-                                 @PathVariable String searchName) {
+                                 String selectName) {
         try {
             Page<PmsProductCategory> page = new Page<>(pageNum, pageSize);
             QueryWrapper<PmsProductCategory> queryWrapper = new QueryWrapper<>();
-            if(searchName != null){
-                queryWrapper.like("name",searchName);
+            if(selectName != null){
+                QueryWrapper<PmsProductCategory> name = queryWrapper.like("name", selectName);
+                return new CommonResult().success(productService.page(page,name));
             }
 
 //            return new CommonResult().success(productService.page(new Page<PmsProductCategory>(pageNum, pageSize), new QueryWrapper<>(pmsProductCategory)));

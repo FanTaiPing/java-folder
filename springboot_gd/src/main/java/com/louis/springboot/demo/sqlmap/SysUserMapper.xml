@@ -46,7 +46,7 @@
       #{lastUpdateBy,jdbcType=VARCHAR}, #{lastUpdateTime,jdbcType=TIMESTAMP}, #{delFlag,jdbcType=TINYINT}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.louis.springboot.demo.model.SysUser">
+  <insert id="insertSelective" parameterType="com.louis.springboot.demo.model.SysUser" keyProperty="id" useGeneratedKeys="true">
     insert into sys_user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">

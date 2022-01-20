@@ -1,15 +1,456 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1fde2a37-5384-4853-a71b-23d97dfaf41a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/package - 副本.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/plopfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/generator/genConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/generator/generator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/mnt/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/mnt/connect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/mnt/database.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/mnt/deploy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/mnt/deployHistory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/mnt/serverDeploy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/monitor/log.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/monitor/online.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/system/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/system/dept.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/system/dict.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/system/dictDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/system/job.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/system/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/system/role.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/system/timing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/system/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/tbClass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/tbInterview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/tbStudent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/tbTeacher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/tbText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/tbWork.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/tbWorkInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/tools/alipay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/tools/email.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/tools/localStorage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/api/tools/qiniu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/401_images/401.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/404_images/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/404_images/404_cloud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/Steve-Jobs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/alipay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/anq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/app.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/backup.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/chain.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/chart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/codeConsole.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/dashboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/database.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/date.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/deploy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/dept.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/dev.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/develop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/dictionary.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/doc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/download.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/edit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/education.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/error.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/exit-fullscreen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/fullscreen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/fwb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/gonggao.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/index.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/international.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/ipvisits.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/java.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/link.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/lock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/log.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/login.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/markdown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/message.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/mnt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/money.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/monitor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/nested.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/password.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/people.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/peoples.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/permission.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/qiniu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/redis.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/role.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/server.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/shopping.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/size.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/skill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/source.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/sqlMonitor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/swagger.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/sys-tools.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/system.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/system1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/theme.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/timing.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/tools.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/tree-table.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/tree.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/unlock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/user1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/validCode.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/visits.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/web.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/wechat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/weixin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svg/zujian.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/icons/svgo.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/images/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/styles/btn.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/styles/eladmin.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/styles/element-ui.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/styles/element-variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/styles/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/styles/mixin.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/styles/sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/styles/transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/assets/styles/variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Breadcrumb/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Crud/CRUD.operation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Crud/Pagination.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Crud/RR.operation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Crud/UD.operation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Crud/crud.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/DateRangePicker/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Dict/Dict.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Dict/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Doc/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/BarChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/Category.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/Funnel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/Gauge.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/Graph.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/HeatMap.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/Line3D.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/PieChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/Point.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/RadarChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/Rich.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/Sankey.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/Scatter.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/Sunburst.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/ThemeRiver.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Echarts/WordCloud.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/GDcodeTools/GdSelect.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/GithubCorner/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Hamburger/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/HeaderSearch/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/IconSelect/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/IconSelect/requireIcons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Iframe/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/JavaEdit/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Pagination/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/PanThumb/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/ParentView/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Permission/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Permission/permission.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/RightPanel/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/Screenfull/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/SizeSelect/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/SvgIcon/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/ThemePicker/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/UploadExcel/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/components/YamlEdit/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/layout/components/AppMain.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/layout/components/Navbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/layout/components/Settings/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/layout/components/Sidebar/FixiOSBug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/layout/components/Sidebar/Item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/layout/components/Sidebar/Link.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/layout/components/Sidebar/Logo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/layout/components/Sidebar/SidebarItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/layout/components/Sidebar/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/layout/components/TagsView/ScrollPane.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/layout/components/TagsView/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/layout/components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/layout/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/layout/mixin/ResizeHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/mixins/crud.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/router/routers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/store/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/store/modules/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/store/modules/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/store/modules/permission.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/store/modules/settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/store/modules/tagsView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/store/modules/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/utils/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/utils/clipboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/utils/datetime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/utils/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/utils/permission.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/utils/request.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/utils/rsaEncrypt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/utils/shortcuts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/utils/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/utils/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/classManager/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/components/Echarts.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/components/Editor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/components/MarkDown.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/components/YamlEdit.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/components/excel/upload-excel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/components/icons/element-icons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/components/icons/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/components/icons/svg-icons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/dashboard/LineChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/dashboard/PanelGroup.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/dashboard/mixins/resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/features/401.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/features/404.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/features/redirect.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/generator/config.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/generator/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/generator/preview.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/interview/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/mnt/app/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/mnt/database/execute.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/mnt/database/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/mnt/deploy/deploy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/mnt/deploy/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/mnt/deploy/sysRestore.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/mnt/deployHistory/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/mnt/server/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/monitor/log/errorLog.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/monitor/log/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/monitor/log/search.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/monitor/online/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/monitor/server/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/monitor/sql/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/nested/menu1/menu1-1/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/nested/menu1/menu1-2/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/nested/menu2/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/student/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/system/dept/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/system/dict/dictDetail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/system/dict/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/system/job/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/system/job/module/form.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/system/job/module/header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/system/menu/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/system/role/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/system/timing/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/system/timing/log.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/system/user/center.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/system/user/center/updateEmail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/system/user/center/updatePass.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/system/user/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/teacher/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/tools/aliPay/config.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/tools/aliPay/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/tools/aliPay/toPay.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/tools/email/config.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/tools/email/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/tools/email/send.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/tools/storage/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/tools/storage/local/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/tools/storage/qiniu/form.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/tools/storage/qiniu/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/tools/swagger/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/work/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/src/views/workinfo/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../training-java/eladmin-web-vue/training-web-master/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00-hxzy-project/sglototo/sglototo-admin/src/main/java/com/km/sglototo/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../00-hxzy-project/sglototo/sglototo-admin/src/main/java/com/km/sglototo/product/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00-hxzy-project/sglototo/sglototo-admin/target/classes/com/km/sglototo/product/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../00-hxzy-project/sglototo/sglototo-admin/target/classes/com/km/sglototo/product/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00-hxzy-project/vue-admin/src/api/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/../00-hxzy-project/vue-admin/src/api/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../00-hxzy-project/vue-admin/src/views/products/product/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../00-hxzy-project/vue-admin/src/views/products/product/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Redis资料/redis_day1/redis_day1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Redis资料/redis_day1/src/main/java/com/baizhi/test/TestKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Redis资料/redis_day1/src/main/java/com/baizhi/test/TestKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Redis资料/redis_day1/src/main/java/com/baizhi/test/TestRedis.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Redis资料/redis_day1/src/main/java/com/baizhi/test/TestRedis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Redis资料/redis_day2/redis_day2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Redis资料/redis_day2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Redis资料/redis_day2/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Redis资料/redis_day2/src/test/java/com/baizhi/TestRedisTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Redis资料/redis_day2/src/test/java/com/baizhi/TestRedisTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Redis资料/redis_day2/src/test/java/com/baizhi/TestStringRedisTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Redis资料/redis_day2/src/test/java/com/baizhi/TestStringRedisTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysql练习/TenSpringBoot.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../mysql练习/TenSpringBoot.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poetryss/web/js/colResizable-1.6 (1)/__MACOSX/colresizable/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poetryss/web/js/colResizable-1.6 (1)/__MACOSX/colresizable/samples/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poetryss/web/js/colResizable-1.6 (1)/colresizable" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot_gd/src/main/java/com/louis/springboot/demo/controller/CraPersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot_gd/src/main/java/com/louis/springboot/demo/controller/CraPersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot_gd/src/main/java/com/louis/springboot/demo/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot_gd/src/main/java/com/louis/springboot/demo/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot_gd/src/main/java/com/louis/springboot/demo/sqlmap/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot_gd/src/main/java/com/louis/springboot/demo/sqlmap/SysUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot_gd/target/classes/com/louis/springboot/demo/controller/CraPersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot_gd/target/classes/com/louis/springboot/demo/controller/CraPersonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot_gd/target/classes/com/louis/springboot/demo/controller/SysUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot_gd/target/classes/com/louis/springboot/demo/controller/SysUserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot_gd/target/classes/com/louis/springboot/demo/sqlmap/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot_gd/target/classes/com/louis/springboot/demo/sqlmap/SysUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tenSpringboot1/BankOnline/BankOnline.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tenSpringboot1/libraryManage/libraryManage.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tenSpringboot1/tenSpringboot.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue2.0-module-master/src/components/food/table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue2.0-module-master/src/components/food/table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue2.0-module-master/src/components/food/user.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue2.0-module-master/src/components/food/user.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\study\mvnResponsitory" />
-        <option name="mavenHome" value="D:/study/apache-maven-3.8.4" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.8.4" />
         <option name="userSettingsFile" value="D:\study\apache-maven-3.8.4\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectId" id="22wvtV4EgQjNsJx7gXQOOgxBRni" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../training-java/eladmin-java" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="single.Main" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="single.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSingle (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="single.TestSingle" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="single.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSingle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java.TestSingle" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TestSingle (1)" />
+        <item itemvalue="Application.TestSingle" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1fde2a37-5384-4853-a71b-23d97dfaf41a" name="Changes" comment="" />
+      <created>1640761681469</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640761681469</updated>
+      <workItem from="1640761683890" duration="3299000" />
+      <workItem from="1640853819513" duration="3911000" />
+      <workItem from="1640911800432" duration="1283000" />
+      <workItem from="1640914434801" duration="13000" />
+      <workItem from="1642507205672" duration="631000" />
+      <workItem from="1642554354968" duration="2366000" />
+      <workItem from="1642640177073" duration="866000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

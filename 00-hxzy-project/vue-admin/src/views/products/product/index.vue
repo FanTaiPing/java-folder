@@ -1,13 +1,15 @@
 <template>
   <div class="app-container">
-    <el-form :inline="true" :model="queryList" ref="selectForm" label-width="80px" size="medinum">
+    <!-- ref="selectForm"queryList.selectName -->
+    <el-form :inline="true" :model="queryList" @submit.native.prevent label-width="80px" size="medinum">
       <!-- <el-form-item label="商品id" size="medinum">
         <el-input v-model="queryList.selectId" placeholder="请输入商品id" style="width: 200px;"></el-input>
       </el-form-item> -->
       <el-form-item label="商品名称" size="medinum">
-        <el-input v-model="queryList.selectName" placeholder="请输入商品名称" style="width: 200px;"></el-input>
+        <el-input @keyup.enter.native="searchProductList" v-model="queryList.selectName" placeholder="请输入商品名称"
+          style="width: 200px;"></el-input>
       </el-form-item>
-      <el-button type="success" size="medinum" @click="searchProductList('selectForm')">查询</el-button>
+      <el-button type="success" size="medinum" @click="searchProductList()">查询</el-button>
 
       <el-row>
         <div>
@@ -57,13 +59,12 @@
     findAllProduct,
     deleteProductById,
     updateProduct,
-    searchProductList
   } from "@/api/product";
   export default {
     name: "productList",
     data() {
       return {
-        // selectName: '',
+        // selectName: null,
         // selectId: '',
         productList: [],
         multipleSelection: [],
@@ -75,7 +76,9 @@
           //每页显示信息条数
           pageSize: 5
         },
-        total: null
+        total: null,
+        listLoading: true
+
       }
     },
     created() {
@@ -83,6 +86,7 @@
     },
     methods: {
       getList() {
+        listLoading: true,
         //查询商品信息
         findAllProduct(this.queryList).then((response) => {
           // debugger
@@ -93,6 +97,16 @@
           this.currentPage = response.current;
           console.log(response.data);
         });
+      },
+      searchProductList() {
+        listLoading: true;
+        // console.log(this.queryList)
+        if (this.queryList.selectName == '') {
+          //查询条件为空时，调用查询所有的方法
+          this.getList()
+          // return
+        }
+        this.getList(this.queryList)
       },
       //添加商品信息
       addProduct() {
@@ -150,10 +164,6 @@
         this.queryList.pageNum = val;
         this.getList();
       },
-      searchProductList(formName) {
-      this.queryList.pageNum = 1;
-      this.getList();
-    },
     },
 
 

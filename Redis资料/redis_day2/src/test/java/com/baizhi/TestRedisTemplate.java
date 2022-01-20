@@ -19,23 +19,19 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-
 //启动springboot应用
 @SpringBootTest(classes = RedisDay2Application.class)
 @RunWith(SpringRunner.class)
 public class TestRedisTemplate {
 
-
     //注入RedisTemplate key Object  Value Object  ===>   对象序列化   name  new User() ====>   name序列化  对象序列化结果
     @Autowired
     private RedisTemplate redisTemplate;
-
 
     //opsForxxx  Value String  List  Set  Zset  hash
 
     @Test
     public void testRedisTemplate(){
-
         /**
          * redisTemplate对象中 key 和 value 的序列化都是 JdkSerializationRedisSerializer
          *      key: string
@@ -55,17 +51,12 @@ public class TestRedisTemplate {
         User user1 = (User) redisTemplate.opsForValue().get("user");
         System.out.println(user1);
 
-
-        redisTemplate.opsForList().leftPush("list",user);
-
-        redisTemplate.opsForSet().add("set",user);
-
-        redisTemplate.opsForZSet().add("zset",user,10);
-
-        redisTemplate.opsForHash().put("map","name",user);
-
-
+//        redisTemplate.opsForList().leftPush("list",user);
+//
+//        redisTemplate.opsForSet().add("set",user);
+//
+//        redisTemplate.opsForZSet().add("zset",user,10);
+//
+//        redisTemplate.opsForHash().put("map","name",user);
     }
-
-
 }

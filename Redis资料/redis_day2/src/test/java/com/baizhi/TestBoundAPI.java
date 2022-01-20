@@ -23,7 +23,6 @@ public class TestBoundAPI {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
-
     //spring data 为了方便我们对redis进行更友好的操作 因此有提供了bound api 简化操作
     @Test
     public void testBound(){
@@ -37,7 +36,6 @@ public class TestBoundAPI {
         //stringRedisTemplate.opsForValue().append("name","是一个好人");
         //String s = stringRedisTemplate.opsForValue().get("name");
         //System.out.println(s);
-
 
         //对字符串类型key进行绑定 后续所有操作都是基于这个key的操作
 
@@ -83,10 +81,6 @@ public class TestBoundAPI {
          *      jvm  1进程开启多个线程 synchronize int n=20
          *      jvm  1进程开启多个线程 synchronize int n=20
          *      .....  LRA脚本
-         *
          */
-
     }
-
-
 }

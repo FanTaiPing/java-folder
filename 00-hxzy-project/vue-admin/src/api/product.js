@@ -1,11 +1,20 @@
 import request from '@/utils/request'
-export function findAllProduct(selectName) {
+export function findAllProduct(queryList) {
+  // if (selectName != null) {
+  //   return request({
+  //     url: '/products/product/productList',
+  //     method: 'get',
+  //     params: selectName
+  //   })  
+  // } else {
   return request({
-    url: '/products/product/productList/' + selectName,
+    url: '/products/product/productList',
     method: 'get',
-    params: selectName
+    params: queryList
   })
 }
+
+// }
 //添加商品信息
 export function addProduct(data) {
   return request({

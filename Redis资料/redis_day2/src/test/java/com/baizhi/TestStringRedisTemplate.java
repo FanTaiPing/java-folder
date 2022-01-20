@@ -14,17 +14,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-
 //启动springboot应用
 @SpringBootTest(classes = RedisDay2Application.class)
 @RunWith(SpringRunner.class)
 public class TestStringRedisTemplate {
-
-
     //注入StringRedisTemplate
     @Autowired
     private StringRedisTemplate stringRedisTemplate;  //key  value 都是字符串
-
 
     //操作redis中key相关
     @Test
@@ -33,10 +29,8 @@ public class TestStringRedisTemplate {
         Boolean hasKey = stringRedisTemplate.hasKey("name");//判断某个key是否存在
         System.out.println(hasKey);
 
-
         DataType name = stringRedisTemplate.type("name");//判断key所对应值的类型
         System.out.println(name);
-
 
         Set<String> keys = stringRedisTemplate.keys("*");//获取redis中所有key
         keys.forEach(key -> System.out.println("key = " + key));
@@ -51,7 +45,6 @@ public class TestStringRedisTemplate {
         //stringRedisTemplate.renameIfAbsent("name","name1");//修改key名字  判断key是否存在
 
         stringRedisTemplate.move("name1",1);//移动key到指定库
-
     }
 
     //操作redis中字符串 opsForValue 实际操作就是redis中String类型
@@ -65,7 +58,6 @@ public class TestStringRedisTemplate {
         stringRedisTemplate.opsForValue().set("code","2357",120, TimeUnit.SECONDS);//设置一个key 超时时间
 
         stringRedisTemplate.opsForValue().append("name","他是是一个好人,单纯少年!");//追加
-
     }
 
     //操作redis中list类型   opsForList 实际操作就是redis中list类型
@@ -89,7 +81,6 @@ public class TestStringRedisTemplate {
     public void testSet(){
         stringRedisTemplate.opsForSet().add("sets","张三","张三","小陈","xiaoming");//创建set 并放入多个元素
 
-
         Set<String> sets = stringRedisTemplate.opsForSet().members("sets");//查看set中成员
         sets.forEach(value-> System.out.println("value = " + value));
 
@@ -112,14 +103,11 @@ public class TestStringRedisTemplate {
             System.out.println(typedTuple.getValue());
             System.out.println(typedTuple.getScore());
         });
-
     }
 
     //操作redis中Hash类型   opsForHash 实际操作就是redis中Hash类型
-
     @Test
     public void testHash(){
-
         stringRedisTemplate.opsForHash().put("maps","name","张三");//创建一个hash类型 并放入key value
 
         Map<String,String> map =  new HashMap<String,String>();
@@ -136,10 +124,5 @@ public class TestStringRedisTemplate {
         List<Object> vals = stringRedisTemplate.opsForHash().values("maps");//获取所有values
 
         Set<Object> keys = stringRedisTemplate.opsForHash().keys("maps");//获取所有keys
-
-
     }
-
-
-
 }

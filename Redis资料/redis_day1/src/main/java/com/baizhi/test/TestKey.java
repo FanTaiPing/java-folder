@@ -10,7 +10,7 @@ public class TestKey {
 
     @Before
     public void before(){
-        this.jedis = new Jedis("192.168.202.205", 7000);
+        this.jedis = new Jedis("127.0.0.1", 6379);
     }
 
     @After
@@ -23,9 +23,13 @@ public class TestKey {
     @Test
     public void testKeys(){
         //删除一个key
-        jedis.del("name");
+//        jedis.del("name");
         //删除多个key
         //jedis.del("name","age");
+
+
+        String  set = jedis.set("name", "小明");
+        System.out.println(jedis.get("name"));
 
         //判断一个key是否存在exits
         Boolean name = jedis.exists("name");
