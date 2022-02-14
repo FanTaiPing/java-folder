@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/00-hxzy-project.iml" filepath="$PROJECT_DIR$/.idea/00-hxzy-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sglototo/sglototo.iml" filepath="$PROJECT_DIR$/sglototo/sglototo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sglototo/sglototo-admin/sglototo-admin.iml" filepath="$PROJECT_DIR$/sglototo/sglototo-admin/sglototo-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sglototo/sglototo-mbg/sglototo-mbg.iml" filepath="$PROJECT_DIR$/sglototo/sglototo-mbg/sglototo-mbg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatisplus/springboot-mybatisplus.iml" filepath="$PROJECT_DIR$/springboot-mybatisplus/springboot-mybatisplus.iml" />
+    </modules>
+  </component>
+</project>
